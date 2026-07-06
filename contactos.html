@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contactos.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <img class="logo" src="img/logobarber.png" alt="">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="galeria.html">Galería</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
+            <a href="noticias.html">Noticias</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!--Formulario-->
+    <section class="contenedor-formulario">
+        <div class="formulario">
+            <h1>Ingrese los datos solicitados</h1>
+
+            <form id="formulario">
+
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre aquí" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" placeholder="Ingrese su apellido aquí" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" placeholder="Ingrese su correo electrónico aquí" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" placeholder="Ingrese su número de teléfono aquí" required>
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" placeholder="Ejemplo: Horarios" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tipo-consulta">Tipo de consulta:</label>
+                    <select id="tipo-consulta" required>
+                        <option value="">-- Selecciona un asunto --</option>
+                        <option value="precio-corte">Consulta sobre precio de cortes</option>
+                        <option value="precio-barba">Consulta sobre precio de barba</option>
+                        <option value="precio-pack">Consulta sobre precio de pack ejecutivo</option>
+                        <option value="servicios-disponibles">Qué servicios ofrecen</option>
+                        <option value="horario-semana">Horario entre semana</option>
+                        <option value="horario-fin-semana">Horario fines de semana</option>
+                        <option value="horario-feriados">Horario en feriados</option>
+                        <option value="promocion-estudiantes">Descuento para estudiantes</option>
+                        <option value="promocion-lunes">Promoción de los lunes</option>
+                        <option value="promocion-martes">Promoción de los martes</option>
+                        <option value="promocion-grupos">Descuento para grupos</option>
+                        <option value="domicilio">Consultar servicio a domicilio</option>
+                        <option value="productos">Productos que usan</option>
+                        <option value="evento-cumpleaños">Evento para cumpleaños</option>
+                        <option value="evento-empresa">Evento para empresa</option>
+                        <option value="sugerencia">Hacer una sugerencia</option>
+                        <option value="reclamo">Hacer un reclamo</option>
+                        <option value="felicitacion">Felicitaciones</option>
+                        <option value="trabajo">Quiero trabajar con ustedes</option>
+                        <option value="prensa">Quiero colaborar con la barbería</option>
+                        <option value="otro">Otro asunto</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" placeholder="Escriba su mensaje aquí" required></textarea>
+                </div>
+
+                <button type="submit">Enviar consulta</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!--Mapa-->
+    <div class="contenedor-mapa">
+        <div class="caja-mapa">
+            <h1>Nuestra Ubicación</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14417.273121919889!2d-57.36991728193282!3d-25.394154548667952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945db5ad1b67cf0b%3A0xc05ffd6d4b79d8f6!2sBARBERIA%20BROTHERS!5e0!3m2!1sen!2spy!4v1782927255517!5m2!1sen!2spy"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--Información y redes-->
+<footer class="pie-pagina">
+    <!-- Parte superior -->
+    <div class="parte-superior">
+        <!--Columna 1-->
+        <div class="columna">
+            <h4>Enlaces</h4>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#faq">Preguntas</a>
+            <a href="">Contacto</a>
+            <a href="">Politica de privacidad</a>
+            <a href="">Desarrolladores</a>
+        </div>
+
+        <!--Columna 2-->
+        <div class="columna">
+            <h4>Horarios</h4>
+            <p>Lun a Sab 8:00 - 20:00</p>
+            <p>Dom 9:00 - 14:00</p>
+        </div>
+
+        <!--Columna 3-->
+        <div class="columna">
+            <h4>Contacto</h4>
+            <p>📍 Itauguá, Paraguay</p>
+            <p>📞 (0981) 123-456</p>
+            <p>✉️ info@thebrothers.com</p>
+        </div>
+
+        <!--Columna 4-->
+        <div class="columna">
+            <h4>Redes Sociales</h4>
+            <div class="redes-sociales">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="parte-inferior">
+        <p>© 2024 The Brothers Barbershop - Itauguá, Paraguay</p>
+    </div>
+</footer>
+</body>
+
+</html>

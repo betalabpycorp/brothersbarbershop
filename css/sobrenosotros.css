@@ -1,0 +1,426 @@
+.sobre-nosotros {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Encabezado*/
+.sobre-encabezado {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sobre-etiqueta {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #C9A66B;
+    text-transform: uppercase;
+    background: #1a1a1a;
+    padding: 4px 18px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    border: 1px solid #C9A66B;
+}
+
+.sobre-titulo {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+.sobre-subtitulo {
+    font-size: 18px;
+    font-weight: 300;
+    color: #aaaaaa;
+    letter-spacing: 1px;
+}
+
+.sobre-linea {
+    width: 60px;
+    height: 3px;
+    background: #C9A66B;
+    margin: 18px auto 0;
+    border-radius: 2px;
+}
+
+/*Historia*/
+.sobre-historia {
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.sobre-historia p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #dddddd;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.sobre-destacado {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    border-left: 4px solid #C9A66B;
+    padding-left: 20px;
+    margin-bottom: 28px;
+    font-style: italic;
+}
+
+.sobre-historia strong {
+    color: #C9A66B;
+}
+
+/*Firma*/
+.sobre-firma {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #2a2a2a;
+    text-align: right;
+}
+
+.sobre-firma-nombre {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.sobre-firma-cargo {
+    display: block;
+    font-size: 14px;
+    color: #888888;
+}
+
+/*Misión, visión y valores*/
+.sobre-mision-vision {
+    margin: 50px 0 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.sobre-mision,
+.sobre-vision {
+    background: #1a1a1a;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s ease;
+}
+
+.sobre-mision:hover,
+.sobre-vision:hover {
+    border-color: #C9A66B;
+    box-shadow: 0 4px 20px rgba(201, 166, 107, 0.1);
+}
+
+.sobre-mision-vision .sobre-icono {
+    font-size: 24px;
+    color: #C9A66B;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sobre-subtitulo-seccion {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+}
+
+.sobre-mision p,
+.sobre-vision p {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.sobre-mision p strong,
+.sobre-vision p strong {
+    color: #C9A66B;
+}
+
+/*Valores*/
+.sobre-valores {
+    grid-column: 1 / -1;
+    background: #1a1a1a;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+}
+
+.sobre-valores .sobre-icono {
+    font-size: 24px;
+    color: #C9A66B;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sobre-valores .sobre-subtitulo-seccion {
+    margin-bottom: 25px;
+}
+
+.sobre-valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.sobre-valor-item {
+    background: #0d0d0d;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s ease;
+}
+
+.sobre-valor-item:hover {
+    border-color: #C9A66B;
+    transform: translateY(-5px);
+}
+
+.sobre-valor-icono {
+    font-size: 20px;
+    color: #C9A66B;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.sobre-valor-nombre {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.sobre-valor-desc {
+    font-size: 14px;
+    color: #aaaaaa;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*Equipo*/
+.sobre-equipo {
+    margin: 50px 0 45px;
+}
+
+.sobre-equipo-titulo {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.sobre-equipo-descripcion {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.sobre-equipo-descripcion strong {
+    color: #C9A66B;
+}
+
+.sobre-equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.sobre-equipo-miembro {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 25px 20px 20px;
+    text-align: center;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s ease;
+}
+
+.sobre-equipo-miembro:hover {
+    border-color: #C9A66B;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(201, 166, 107, 0.1);
+}
+
+.sobre-equipo-foto {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #C9A66B;
+    position: relative;
+}
+
+.sobre-equipo-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre-equipo-cargo {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #C9A66B;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.sobre-equipo-nombre {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px 0 8px;
+}
+
+.sobre-equipo-bio {
+    font-size: 14px;
+    color: #aaaaaa;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*sobre-local*/
+.sobre-local {
+    margin: 50px 0 45px;
+}
+
+.sobre-local-titulo {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.sobre-local-descripcion {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.sobre-local-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-local-foto {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s ease;
+}
+
+.sobre-local-foto:hover {
+    border-color: #C9A66B;
+    transform: scale(1.02);
+}
+
+.sobre-local-foto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.sobre-local-pie {
+    display: block;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaaaaa;
+    background: #0d0d0d;
+}
+
+/* ---------- UBICACIÓN ---------- */
+.sobre-ubicacion {
+    background: #1a1a1a;
+    padding: 35px 30px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sobre-ubicacion-titulo {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.sobre-ubicacion-texto {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 15px;
+}
+
+.sobre-ubicacion-texto strong {
+    color: #C9A66B;
+}
+
+.sobre-ubicacion-frase {
+    color: #888888;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .sobre-titulo {
+        font-size: 32px;
+    }
+
+    .sobre-mision-vision {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-equipo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sobre-local-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sobre-destacado {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-equipo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-ubicacion {
+        padding: 25px 15px;
+    }
+
+    .sobre-equipo-foto {
+        width: 100px;
+        height: 100px;
+    }
+}

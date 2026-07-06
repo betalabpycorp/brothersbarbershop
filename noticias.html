@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/noticias.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <img class="logo" src="img/logobarber.png" alt="">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contactos.html">Contactos</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
+    </header>
+
+    <hr>
+
+    <div class="seccion-noticias">
+
+    <!--Encabezado-->
+    <div class="noticias-encabezado">
+        <span class="noticias-etiqueta">/ Mantenete informado</span>
+        <h2 class="noticias-titulo-principal">Últimas Noticias</h2>
+        <p class="noticias-subtitulo">Enterate de todo lo que pasa en The Brothers</p>
+        <div class="noticias-linea"></div>
+    </div>
+
+    <!--Grid de noticias-->
+    <div class="noticias-grid" id="noticiasGrid"></div>
+
+</div>
+
+<!--Modales-->
+
+<div class="modal" id="modalNoticia">
+    <div class="modal-contenido">
+        <span class="modal-cerrar" id="modalCerrar">&times;</span>
+        <div class="modal-imagen">
+            <img src="" alt="" id="modalImg" />
+        </div>
+        <div class="modal-body">
+            <span class="modal-fecha" id="modalFecha"></span>
+            <h2 class="modal-titulo" id="modalTitulo"></h2>
+            <div id="modalTexto"></div>
+        </div>
+    </div>
+</div>
+
+    <!--Información y redes-->
+<footer class="pie-pagina">
+    <!-- Parte superior -->
+    <div class="parte-superior">
+        <!--Columna 1-->
+        <div class="columna">
+            <h4>Enlaces</h4>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#faq">Preguntas</a>
+            <a href="">Contacto</a>
+            <a href="">Politica de privacidad</a>
+            <a href="">Desarrolladores</a>
+        </div>
+
+        <!--Columna 2-->
+        <div class="columna">
+            <h4>Horarios</h4>
+            <p>Lun a Sab 8:00 - 20:00</p>
+            <p>Dom 9:00 - 14:00</p>
+        </div>
+
+        <!--Columna 3-->
+        <div class="columna">
+            <h4>Contacto</h4>
+            <p>📍 Itauguá, Paraguay</p>
+            <p>📞 (0981) 123-456</p>
+            <p>✉️ info@thebrothers.com</p>
+        </div>
+
+        <!--Columna 4-->
+        <div class="columna">
+            <h4>Redes Sociales</h4>
+            <div class="redes-sociales">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="parte-inferior">
+        <p>© 2024 The Brothers Barbershop - Itauguá, Paraguay</p>
+    </div>
+</footer>
+
+    <!--Scripts-->
+    <script src="js/noticias.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/*Formulario*/
+.formulario {
+    background-color: rgba(201, 166, 107, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.formulario h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+/*Campo*/
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.campo label {
+    font-size: 18px;
+    color: #fff;
+    min-width: 130px;
+    flex-shrink: 0;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #0d0d0d;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #C9A66B;
+    outline: none;
+}
+
+/*Boton*/
+.formulario button {
+    width: 100%;
+    padding: 14px;
+    background: #C9A66B;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.formulario button:hover {
+    background: #b8924f;
+    transform: scale(1.02);
+}
+
+/*Mapa*/
+.contenedor-mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-mapa{
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-mapa h1{
+    color: white;
+}

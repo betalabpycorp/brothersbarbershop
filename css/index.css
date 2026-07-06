@@ -1,0 +1,468 @@
+body{
+    margin: 0;
+    left: 0;
+    top: 0;
+    background-color: black;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*Eliminar scrollbar*/
+html, body {
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
+    background: transparent;
+}
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+hr {
+    border: none;           
+    height: 2px;            
+    background-color: #C9A66B; 
+    margin: 40px 0;
+}
+
+.logo{
+    width: 150px;
+    border-radius: 150px;
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+     position: fixed;      
+    top: 0;                
+    left: 0;                
+    width: 100%;           
+    z-index: 1000;         
+    background: #000000;
+    height: 50px;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+header a:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: rgb(39, 17, 2);
+    color: white;
+}
+
+/*Banner*/
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 100%;
+    height: 720px; 
+    gap: 15px;
+}
+
+.banner h1,h4{
+    margin: 0;
+    color: white;
+}
+
+.banner div{
+    display: flex;
+    gap: 18px;
+}
+
+.banner h1{
+    font-size: 35px;
+}
+
+.banner h4{
+    font-size: 20px;
+}
+
+/*Presentación*/
+.presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 40px 20px;
+    min-height: 70vh; 
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;  
+}
+
+.textpresen{
+    flex: 1;
+    max-width: 550px;  
+    text-align: center;  
+}
+
+.presentacion div h4{
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 16px;           
+    line-height: 1.6;           
+    color: #ffffff;            
+    margin: 0 auto 20px auto; 
+    max-width: 600px;
+    text-align: left;
+}
+
+.img-barbero{
+    background-image: url(../img/barberos.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 350px; 
+    height: 250px;
+    flex-shrink: 0;
+}
+
+/*Servicios*/
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center; 
+}
+
+.contenido {
+    color: white;
+    background-color: #291a01;
+    padding: 25px;
+    display: block;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.contenido:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.sp-categoria{
+    color: red;
+}
+
+.sp-precio{
+    color: rgb(9, 255, 0);
+}
+
+.nombre-servicio{
+    text-align: center;
+}
+
+/*Boton ver mas*/
+.ver-mas{
+   display: block; 
+    margin: 15px auto 0 auto;
+    padding: 10px 30px;
+    background-color: #C9A66B;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    width: fit-content; 
+}
+
+.ver-mas:hover {
+    background-color: #b8924f;
+    transform: scale(1.08); 
+    box-shadow: 0 4px 15px rgba(201, 166, 107, 0.5); 
+}
+
+.titulos{
+    margin-top: 0;
+    color:  #b8924f;
+    text-align: center;
+}
+
+/*Galería*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    gap: 15px;
+    margin: 0 20px;
+    padding: 30px;
+}
+
+.fotos-galeria{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.fotos-galeria:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(201, 166, 107, 0.5)
+}
+
+/*Preguntas frecuentes*/
+.faq {
+    padding: 10px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.titulo-faq {
+    margin-top: 0;
+    text-align: center;
+    color: #C9A66B;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitulo-faq {
+    text-align: center;
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    background: #1a1a1a;
+    border: 1px solid #C9A66B;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #d4b87a;
+    box-shadow: 0 4px 20px rgba(201, 166, 107, 0.15);
+}
+
+.faq-pregunta {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.faq-pregunta:hover {
+    color: #C9A66B;
+}
+
+.faq-pregunta .icono-faq {
+    font-size: 1.5rem;
+    color: #C9A66B;
+    transition: transform 0.4s ease;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.faq-item.activo .faq-pregunta .icono-faq {
+    transform: rotate(180deg);
+}
+
+.faq-respuesta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+    padding: 0 25px;
+}
+
+.faq-item.activo .faq-respuesta {
+    max-height: 300px;
+    padding: 0 25px 20px 25px;
+}
+
+.faq-respuesta p {
+    color: #dddddd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq-respuesta p strong {
+    color: #C9A66B;
+}
+
+/*Botón volver arriba*/
+.btn-subir {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #C9A66B;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(201, 166, 107, 0.3);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-subir:hover {
+    background-color: #b8924f;
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(201, 166, 107, 0.5);
+}
+
+.btn-subir.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Contenedor información*/
+.contenedor-info{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/* ============ PIE DE PÁGINA ============ */
+.pie-pagina {
+    background: #0d0d0d;
+    color: #cccccc;
+    padding: 40px 20px 20px 20px;
+    border-top: 3px solid #C9A66B;
+    margin-top: 60px;
+}
+
+.parte-superior {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 150px;
+}
+
+.columna h4 {
+    color: #C9A66B;
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.columna a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.columna a:hover {
+    color: #C9A66B;
+    transform: translateX(5px);
+}
+
+.columna p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.redes-sociales a {
+    background: #1a1a1a;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid #333;
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.redes-sociales a:hover {
+    background: #C9A66B;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Parte inferior */
+.parte-inferior {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777777;
+}
+
+.parte-inferior p {
+    margin: 0;
+}
+
