@@ -3,6 +3,7 @@ body{
     left: 0;
     top: 0;
     background-color: black;
+    padding-top: 120px;
 }
 
 @keyframes fadeIn {
@@ -1372,6 +1373,13 @@ header a:hover{
 /* HEADER CON HAMBURGUESA - COMPLETO           */
 /* ============================================ */
 
+/* === PADDING PARA TODOS LOS DISPOSITIVOS === */
+body {
+    padding-top: 80px;
+    margin: 0;
+    background-color: black;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -1385,24 +1393,26 @@ header {
     background: #000000;
     height: 80px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid #C9A66B;
 }
 
 .header-contenido {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    gap: 30px;
 }
 
 .logo {
     width: 150px;
     height: auto;
     flex-shrink: 0;
-    order: 2;
-    margin-left: auto;
+    order: 1;
+    margin-right: auto;
 }
 
 .nav-links {
@@ -1412,7 +1422,7 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
-    order: 1;
+    order: 2;
 }
 
 .nav-links a {
@@ -1440,7 +1450,6 @@ header {
     padding: 8px;
     z-index: 1001;
     order: 3;
-    margin-left: 15px;
 }
 
 .boton-hamburguesa span {
@@ -1481,6 +1490,10 @@ header {
 
 /* ===== RESPONSIVE - MÓVILES ===== */
 @media (max-width: 768px) {
+    body {
+        padding-top: 80px !important;  /* Forzamos el mismo padding en móvil */
+    }
+
     header {
         height: 70px;
         padding: 8px 15px;
@@ -1488,12 +1501,13 @@ header {
 
     .header-contenido {
         justify-content: space-between;
+        gap: 0;
     }
 
     .logo {
         width: 80px;
         order: 1;
-        margin-left: 0;
+        margin-right: 0;
     }
 
     .boton-hamburguesa {
@@ -1501,7 +1515,7 @@ header {
         order: 2;
         position: relative;
         margin-left: auto;
-        margin-right: 30px;  /* Esto lo separa del borde derecho */
+        margin-right: 30px;
     }
 
     .nav-links {
@@ -1534,13 +1548,13 @@ header {
         width: 100%;
         text-align: center;
     }
-
-    body {
-        padding-top: 70px;
-    }
 }
 
 @media (max-width: 480px) {
+    body {
+        padding-top: 70px !important;
+    }
+
     header {
         height: 65px;
         padding: 6px 12px;
@@ -1551,7 +1565,7 @@ header {
     }
 
     .boton-hamburguesa {
-        margin-right: 25px;  /* Separación del borde en móviles pequeños */
+        margin-right: 25px;
     }
 
     .boton-hamburguesa span {
@@ -1570,13 +1584,13 @@ header {
         font-size: 17px;
         padding: 8px 15px;
     }
-
-    body {
-        padding-top: 65px;
-    }
 }
 
 @media (max-width: 360px) {
+    body {
+        padding-top: 60px !important;
+    }
+
     header {
         height: 60px;
         padding: 5px 10px;
@@ -1587,7 +1601,7 @@ header {
     }
 
     .boton-hamburguesa {
-        margin-right: 20px;  /* Separación del borde en móviles muy pequeños */
+        margin-right: 20px;
     }
 
     .boton-hamburguesa span {
@@ -1603,9 +1617,5 @@ header {
     .nav-links a {
         font-size: 15px;
         padding: 6px 12px;
-    }
-
-    body {
-        padding-top: 60px;
     }
 }
