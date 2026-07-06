@@ -466,3 +466,904 @@ header a:hover{
     margin: 0;
 }
 
+/*Responsive*/
+/* ============================================ */
+/* MEDIA QUERIES - RESPONSIVE COMPLETO         */
+/* ============================================ */
+
+/* ===== PANTALLAS MUY GRANDES (4K) ===== */
+@media (min-width: 1920px) {
+    .seccion-noticias,
+    .presentacion,
+    .servicios,
+    .galeria,
+    .faq,
+    .contenedor-info,
+    .parte-superior {
+        max-width: 1400px;
+    }
+
+    .banner {
+        height: 900px;
+    }
+
+    .banner h1 {
+        font-size: 48px;
+    }
+
+    .banner h4 {
+        font-size: 26px;
+    }
+
+    .servicios {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 25px;
+    }
+
+    .galeria .fotos-galeria {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor-info {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .presentacion div h4 {
+        font-size: 18px;
+        max-width: 700px;
+    }
+
+    .img-barbero {
+        max-width: 450px;
+        height: 320px;
+    }
+}
+
+/* ===== PANTALLAS GRANDES (Laptops/Desktop) ===== */
+@media (max-width: 1200px) {
+    .servicios {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1000px;
+        gap: 18px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .galeria .fotos-galeria {
+        width: 140px;
+        height: 140px;
+    }
+
+    .contenedor-info {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .banner {
+        height: 600px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+}
+
+/* ===== PANTALLAS MEDIANAS (Tablets horizontales) ===== */
+@media (max-width: 1024px) {
+    .servicios {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 15px;
+        max-width: 950px;
+    }
+
+    .contenido {
+        padding: 18px;
+        font-size: 13px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .galeria .fotos-galeria {
+        width: 140px;
+        height: 140px;
+    }
+
+    .banner {
+        height: 500px;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner h4 {
+        font-size: 18px;
+    }
+
+    .presentacion {
+        padding: 30px 20px;
+        gap: 30px;
+        min-height: auto;
+    }
+
+    .textpresen {
+        max-width: 450px;
+    }
+
+    .img-barbero {
+        max-width: 280px;
+        height: 200px;
+    }
+
+    .contenedor-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    header a {
+        font-size: 18px;
+    }
+
+    .parte-superior {
+        gap: 20px;
+    }
+
+    .columna {
+        min-width: 120px;
+    }
+}
+
+/* ===== PANTALLAS TABLET (Vertical) ===== */
+@media (max-width: 850px) {
+    .servicios {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 15px;
+        max-width: 750px;
+    }
+
+    .contenido {
+        padding: 16px;
+        font-size: 13px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .galeria .fotos-galeria {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contenedor-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .banner {
+        height: 450px;
+    }
+
+    .banner h1 {
+        font-size: 26px;
+    }
+
+    .banner h4 {
+        font-size: 16px;
+    }
+}
+
+/* ===== PANTALLAS PEQUEÑAS (Tablets verticales) ===== */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 10px 15px;
+        gap: 8px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    header a {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+
+    /* Banner */
+    .banner {
+        height: 400px;
+        background-position: center;
+        gap: 10px;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .banner h4 {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .banner div {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner .ver-mas {
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+
+    /* Presentación */
+    .presentacion {
+        padding: 30px 15px;
+        gap: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textpresen {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .presentacion div h4 {
+        font-size: 14px;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .img-barbero {
+        max-width: 250px;
+        height: 180px;
+    }
+
+    /* Servicios - 3 columnas en tablet */
+    .servicios {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        padding: 12px;
+        max-width: 650px;
+    }
+
+    .contenido {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .contenido:hover {
+        transform: scale(1.05);
+    }
+
+    .nombre-servicio {
+        font-size: 14px;
+    }
+
+    .titulos {
+        font-size: 22px;
+        padding: 0 15px;
+    }
+
+    /* Galería - 4 columnas en tablet */
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 15px;
+        margin: 0 10px;
+    }
+
+    .galeria .fotos-galeria {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* FAQ */
+    .faq {
+        padding: 10px 15px;
+    }
+
+    .titulo-faq {
+        font-size: 2rem;
+    }
+
+    .subtitulo-faq {
+        font-size: 1rem;
+    }
+
+    .faq-pregunta {
+        font-size: 0.95rem;
+        padding: 15px 20px;
+    }
+
+    .faq-respuesta p {
+        font-size: 0.9rem;
+    }
+
+    .faq-item.activo .faq-respuesta {
+        padding: 0 20px 15px 20px;
+    }
+
+    /* Botón subir */
+    .btn-subir {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Info */
+    .contenedor-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* ===== FOOTER - MÓVILES ===== */
+    .pie-pagina {
+        padding: 30px 15px 15px 15px;
+        margin-top: 40px;
+    }
+
+    .parte-superior {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        align-items: start;
+    }
+
+    .columna {
+        min-width: unset;
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .columna h4 {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+
+    .columna a {
+        font-size: 0.8rem;
+        padding: 3px 0;
+    }
+
+    .columna p {
+        font-size: 0.8rem;
+    }
+
+    .redes-sociales {
+        justify-content: flex-start;
+        gap: 6px;
+    }
+
+    .redes-sociales a {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+}
+
+/* ===== PANTALLAS MÓVILES GRANDES ===== */
+@media (max-width: 600px) {
+    /* Servicios - 4 columnas en móvil (más compactos) */
+    .servicios {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .contenido {
+        padding: 10px 8px;
+        font-size: 11px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .contenido:hover {
+        transform: scale(1.03);
+    }
+
+    .nombre-servicio {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .sp-categoria {
+        font-size: 10px;
+    }
+
+    .sp-precio {
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    /* Galería - 4 columnas en móvil */
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .galeria .fotos-galeria {
+        width: 75px;
+        height: 75px;
+        border-radius: 8px;
+    }
+
+    .titulos {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .ver-mas {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+
+    /* Banner en móvil */
+    .banner {
+        height: 320px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .banner h4 {
+        font-size: 14px;
+    }
+}
+
+/* ===== PANTALLAS MUY PEQUEÑAS (Móviles) ===== */
+@media (max-width: 480px) {
+    /* Header */
+    header {
+        padding: 8px 10px;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    header a {
+        font-size: 12px;
+        padding: 3px 5px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    body {
+        padding-top: 55px;
+    }
+
+    /* Banner */
+    .banner {
+        height: 280px;
+    }
+
+    .banner h1 {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .banner h4 {
+        font-size: 13px;
+        padding: 0 15px;
+    }
+
+    .banner div {
+        gap: 8px;
+    }
+
+    .banner .ver-mas {
+        font-size: 11px;
+        padding: 5px 16px;
+    }
+
+    /* Presentación */
+    .presentacion {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    .presentacion div h4 {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    .img-barbero {
+        max-width: 160px;
+        height: 120px;
+    }
+
+    /* Servicios - 4 columnas en móvil pequeño */
+    .servicios {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 8px;
+    }
+
+    .contenido {
+        padding: 8px 5px;
+        font-size: 10px;
+        border-radius: 10px;
+    }
+
+    .contenido:hover {
+        transform: scale(1.02);
+    }
+
+    .nombre-servicio {
+        font-size: 11px;
+        margin-bottom: 3px;
+    }
+
+    .sp-categoria {
+        font-size: 9px;
+        display: block;
+    }
+
+    .sp-precio {
+        font-size: 10px;
+        font-weight: 700;
+        display: block;
+    }
+
+    .titulos {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .ver-mas {
+        font-size: 12px;
+        padding: 5px 14px;
+    }
+
+    /* Galería - 4 columnas en móvil pequeño */
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 8px;
+        margin: 0 5px;
+    }
+
+    .galeria .fotos-galeria {
+        width: 65px;
+        height: 65px;
+        border-radius: 6px;
+    }
+
+    .galeria .fotos-galeria:hover {
+        transform: scale(1.08);
+    }
+
+    /* FAQ */
+    .faq {
+        padding: 8px;
+    }
+
+    .titulo-faq {
+        font-size: 1.4rem;
+    }
+
+    .subtitulo-faq {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
+    .faq-pregunta {
+        font-size: 0.8rem;
+        padding: 10px 12px;
+    }
+
+    .faq-pregunta .icono-faq {
+        font-size: 1rem;
+    }
+
+    .faq-respuesta p {
+        font-size: 0.8rem;
+    }
+
+    .faq-item.activo .faq-respuesta {
+        padding: 0 12px 10px 12px;
+    }
+
+    /* Botón subir */
+    .btn-subir {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        bottom: 12px;
+        right: 12px;
+    }
+
+    /* Info */
+    .contenedor-info {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 5px;
+    }
+
+    /* ===== FOOTER - MÓVILES PEQUEÑOS ===== */
+    .pie-pagina {
+        padding: 25px 15px 15px;
+        margin-top: 30px;
+    }
+
+    .parte-superior {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding-bottom: 15px;
+        text-align: left;
+    }
+
+    .columna h4 {
+        font-size: 0.8rem;
+        margin-bottom: 4px;
+    }
+
+    .columna a {
+        font-size: 0.75rem;
+        padding: 2px 0;
+    }
+
+    .columna p {
+        font-size: 0.75rem;
+    }
+
+    .redes-sociales {
+        gap: 5px;
+    }
+
+    .redes-sociales a {
+        font-size: 0.65rem;
+        padding: 3px 8px;
+    }
+
+    .parte-inferior {
+        font-size: 0.65rem;
+        padding-top: 12px;
+    }
+}
+
+/* ===== PANTALLAS MUY PEQUEÑAS (Móviles pequeños) ===== */
+@media (max-width: 380px) {
+    header a {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+
+    .logo {
+        width: 32px;
+    }
+
+    body {
+        padding-top: 50px;
+    }
+
+    .banner {
+        height: 240px;
+    }
+
+    .banner h1 {
+        font-size: 16px;
+    }
+
+    .banner h4 {
+        font-size: 11px;
+    }
+
+    /* Servicios - 4 columnas muy compactas */
+    .servicios {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+        padding: 6px;
+    }
+
+    .contenido {
+        padding: 6px 4px;
+        font-size: 9px;
+        border-radius: 8px;
+    }
+
+    .nombre-servicio {
+        font-size: 10px;
+    }
+
+    .sp-categoria {
+        font-size: 8px;
+    }
+
+    .sp-precio {
+        font-size: 9px;
+    }
+
+    /* Galería - 4 columnas muy compactas */
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+        padding: 6px;
+    }
+
+    .galeria .fotos-galeria {
+        width: 55px;
+        height: 55px;
+    }
+
+    .titulos {
+        font-size: 16px;
+    }
+
+    .ver-mas {
+        font-size: 11px;
+        padding: 4px 12px;
+    }
+
+    /* ===== FOOTER - MÓVILES MUY PEQUEÑOS ===== */
+    .pie-pagina {
+        padding: 20px 10px 10px;
+    }
+
+    .parte-superior {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .columna h4 {
+        font-size: 0.75rem;
+    }
+
+    .columna a {
+        font-size: 0.7rem;
+    }
+
+    .columna p {
+        font-size: 0.7rem;
+    }
+
+    .redes-sociales a {
+        font-size: 0.6rem;
+        padding: 2px 6px;
+    }
+
+    .parte-inferior {
+        font-size: 0.6rem;
+        padding-top: 10px;
+    }
+}
+
+/* ===== PANTALLAS EN ORIENTACIÓN HORIZONTAL (Móviles) ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .banner {
+        height: 250px;
+        min-height: 200px;
+    }
+
+    .banner h1 {
+        font-size: 18px;
+    }
+
+    .banner h4 {
+        font-size: 13px;
+    }
+
+    .presentacion {
+        min-height: auto;
+        padding: 15px 20px;
+        flex-direction: row;
+    }
+
+    .img-barbero {
+        max-width: 150px;
+        height: 110px;
+    }
+
+    /* Servicios - 5 columnas en landscape */
+    .servicios {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    .contenido {
+        padding: 12px;
+        font-size: 11px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .galeria .fotos-galeria {
+        width: 90px;
+        height: 90px;
+    }
+
+    header {
+        padding: 5px 10px;
+        gap: 5px;
+    }
+
+    header a {
+        font-size: 13px;
+        padding: 2px 6px;
+    }
+
+    body {
+        padding-top: 40px;
+    }
+
+    /* ===== FOOTER - LANDSCAPE ===== */
+    .parte-superior {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        text-align: left;
+    }
+
+    .columna {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .columna h4 {
+        font-size: 0.8rem;
+    }
+
+    .columna a {
+        font-size: 0.7rem;
+    }
+
+    .columna p {
+        font-size: 0.7rem;
+    }
+
+    .redes-sociales {
+        justify-content: flex-start;
+    }
+
+    .redes-sociales a {
+        font-size: 0.6rem;
+        padding: 2px 8px;
+    }
+}
+
+

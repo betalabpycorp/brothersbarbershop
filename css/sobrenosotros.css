@@ -424,3 +424,874 @@
         height: 100px;
     }
 }
+
+/* ============================================ */
+/* SOBRE NOSOTROS - RESPONSIVE                  */
+/* ============================================ */
+
+/* ===== PANTALLAS MUY GRANDES (4K) ===== */
+@media (min-width: 1920px) {
+    .sobre-nosotros {
+        max-width: 1400px;
+        padding: 60px 40px;
+    }
+
+    .sobre-titulo {
+        font-size: 56px;
+    }
+
+    .sobre-subtitulo {
+        font-size: 22px;
+    }
+
+    .sobre-destacado {
+        font-size: 26px;
+    }
+
+    .sobre-historia p {
+        font-size: 18px;
+    }
+
+    .sobre-equipo-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .sobre-equipo-foto {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sobre-local-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+    }
+
+    .sobre-local-foto img {
+        height: 300px;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* ===== PANTALLAS GRANDES (Laptops/Desktop) ===== */
+@media (max-width: 1200px) {
+    .sobre-equipo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .sobre-local-grid {
+        max-width: 700px;
+    }
+
+    .sobre-mision-vision {
+        gap: 25px;
+    }
+
+    .sobre-titulo {
+        font-size: 38px;
+    }
+
+    .sobre-historia {
+        max-width: 700px;
+    }
+}
+
+/* ===== PANTALLAS MEDIANAS (Tablets horizontales) ===== */
+@media (max-width: 1024px) {
+    .sobre-equipo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .sobre-titulo {
+        font-size: 36px;
+    }
+
+    .sobre-subtitulo {
+        font-size: 16px;
+    }
+
+    .sobre-historia {
+        max-width: 650px;
+    }
+
+    .sobre-mision-vision {
+        gap: 20px;
+    }
+
+    .sobre-mision,
+    .sobre-vision {
+        padding: 25px 20px;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .sobre-local-grid {
+        max-width: 600px;
+    }
+
+    .sobre-local-foto img {
+        height: 200px;
+    }
+}
+
+/* ===== PANTALLAS TABLET (Vertical) ===== */
+@media (max-width: 850px) {
+    .sobre-nosotros {
+        padding: 30px 15px;
+    }
+
+    .sobre-titulo {
+        font-size: 32px;
+    }
+
+    .sobre-subtitulo {
+        font-size: 15px;
+    }
+
+    .sobre-encabezado {
+        margin-bottom: 35px;
+    }
+
+    .sobre-destacado {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    .sobre-historia {
+        max-width: 100%;
+        margin: 0 auto 35px;
+    }
+
+    .sobre-historia p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .sobre-mision-vision {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 35px 0;
+    }
+
+    .sobre-mision,
+    .sobre-vision {
+        padding: 25px 20px;
+    }
+
+    .sobre-mision p,
+    .sobre-vision p {
+        font-size: 14px;
+    }
+
+    .sobre-subtitulo-seccion {
+        font-size: 20px;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .sobre-valor-item {
+        padding: 15px;
+    }
+
+    .sobre-equipo {
+        margin: 35px 0;
+    }
+
+    .sobre-equipo-titulo {
+        font-size: 24px;
+    }
+
+    .sobre-equipo-descripcion {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .sobre-equipo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .sobre-equipo-miembro {
+        padding: 20px 15px;
+    }
+
+    .sobre-equipo-foto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sobre-equipo-nombre {
+        font-size: 17px;
+    }
+
+    .sobre-equipo-bio {
+        font-size: 13px;
+    }
+
+    .sobre-local {
+        margin: 35px 0;
+    }
+
+    .sobre-local-titulo {
+        font-size: 24px;
+    }
+
+    .sobre-local-descripcion {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .sobre-local-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .sobre-local-foto img {
+        height: 180px;
+    }
+
+    .sobre-ubicacion {
+        padding: 25px 20px;
+    }
+
+    .sobre-ubicacion-titulo {
+        font-size: 22px;
+    }
+
+    .sobre-ubicacion-texto {
+        font-size: 15px;
+    }
+
+    .sobre-firma-nombre {
+        font-size: 18px;
+    }
+}
+
+/* ===== PANTALLAS PEQUEÑAS (Tablets verticales) ===== */
+@media (max-width: 768px) {
+    .sobre-titulo {
+        font-size: 28px;
+    }
+
+    .sobre-subtitulo {
+        font-size: 14px;
+    }
+
+    .sobre-destacado {
+        font-size: 18px;
+        padding-left: 12px;
+    }
+
+    .sobre-historia p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .sobre-mision-vision {
+        gap: 15px;
+    }
+
+    .sobre-mision,
+    .sobre-vision {
+        padding: 20px 15px;
+    }
+
+    .sobre-subtitulo-seccion {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .sobre-mision p,
+    .sobre-vision p {
+        font-size: 13px;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .sobre-valor-item {
+        padding: 15px 12px;
+    }
+
+    .sobre-valor-nombre {
+        font-size: 14px;
+    }
+
+    .sobre-valor-desc {
+        font-size: 13px;
+    }
+
+    .sobre-equipo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .sobre-equipo-foto {
+        width: 90px;
+        height: 90px;
+    }
+
+    .sobre-equipo-nombre {
+        font-size: 16px;
+    }
+
+    .sobre-equipo-bio {
+        font-size: 12px;
+    }
+
+    .sobre-local-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .sobre-local-foto img {
+        height: 150px;
+    }
+
+    .sobre-local-pie {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .sobre-ubicacion {
+        padding: 20px 15px;
+    }
+
+    .sobre-ubicacion-titulo {
+        font-size: 20px;
+    }
+
+    .sobre-ubicacion-texto {
+        font-size: 14px;
+    }
+
+    .sobre-ubicacion-frase {
+        font-size: 13px;
+    }
+
+    .sobre-firma-nombre {
+        font-size: 16px;
+    }
+
+    .sobre-firma-cargo {
+        font-size: 12px;
+    }
+
+    .sobre-linea {
+        width: 40px;
+        margin: 12px auto 0;
+    }
+
+    .sobre-etiqueta {
+        font-size: 11px;
+        padding: 3px 14px;
+    }
+}
+
+/* ===== PANTALLAS MÓVILES GRANDES ===== */
+@media (max-width: 600px) {
+    .sobre-nosotros {
+        padding: 25px 12px;
+    }
+
+    .sobre-titulo {
+        font-size: 26px;
+    }
+
+    .sobre-subtitulo {
+        font-size: 13px;
+    }
+
+    .sobre-encabezado {
+        margin-bottom: 30px;
+    }
+
+    .sobre-destacado {
+        font-size: 16px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .sobre-historia {
+        margin: 0 auto 30px;
+    }
+
+    .sobre-historia p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .sobre-mision-vision {
+        margin: 30px 0;
+        gap: 12px;
+    }
+
+    .sobre-mision,
+    .sobre-vision {
+        padding: 18px 15px;
+    }
+
+    .sobre-subtitulo-seccion {
+        font-size: 17px;
+    }
+
+    .sobre-mision p,
+    .sobre-vision p {
+        font-size: 13px;
+    }
+
+    .sobre-valores {
+        padding: 20px 15px;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .sobre-valor-item {
+        padding: 12px 10px;
+    }
+
+    .sobre-valor-icono {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .sobre-valor-nombre {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+
+    .sobre-valor-desc {
+        font-size: 12px;
+    }
+
+    .sobre-equipo {
+        margin: 30px 0;
+    }
+
+    .sobre-equipo-titulo {
+        font-size: 22px;
+    }
+
+    .sobre-equipo-descripcion {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .sobre-equipo-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .sobre-equipo-miembro {
+        padding: 15px 12px;
+    }
+
+    .sobre-equipo-foto {
+        width: 80px;
+        height: 80px;
+        border-width: 2px;
+    }
+
+    .sobre-equipo-cargo {
+        font-size: 9px;
+    }
+
+    .sobre-equipo-nombre {
+        font-size: 14px;
+        margin: 6px 0 5px;
+    }
+
+    .sobre-equipo-bio {
+        font-size: 12px;
+    }
+
+    .sobre-local {
+        margin: 30px 0;
+    }
+
+    .sobre-local-titulo {
+        font-size: 22px;
+    }
+
+    .sobre-local-descripcion {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+    .sobre-local-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .sobre-local-foto img {
+        height: 130px;
+    }
+
+    .sobre-local-pie {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    .sobre-ubicacion {
+        padding: 18px 12px;
+        margin-top: 15px;
+    }
+
+    .sobre-ubicacion-titulo {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .sobre-ubicacion-texto {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .sobre-ubicacion-frase {
+        font-size: 12px;
+    }
+
+    .sobre-firma {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    .sobre-firma-nombre {
+        font-size: 15px;
+    }
+
+    .sobre-firma-cargo {
+        font-size: 11px;
+    }
+}
+
+/* ===== PANTALLAS MUY PEQUEÑAS (Móviles) ===== */
+@media (max-width: 480px) {
+    .sobre-nosotros {
+        padding: 20px 10px;
+    }
+
+    .sobre-titulo {
+        font-size: 22px;
+    }
+
+    .sobre-subtitulo {
+        font-size: 12px;
+    }
+
+    .sobre-destacado {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    .sobre-historia p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    .sobre-mision-vision {
+        gap: 10px;
+    }
+
+    .sobre-mision,
+    .sobre-vision {
+        padding: 15px 12px;
+    }
+
+    .sobre-subtitulo-seccion {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .sobre-mision p,
+    .sobre-vision p {
+        font-size: 12px;
+    }
+
+    .sobre-valores {
+        padding: 15px 12px;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .sobre-valor-item {
+        padding: 10px 8px;
+    }
+
+    .sobre-valor-icono {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .sobre-valor-nombre {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .sobre-valor-desc {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .sobre-equipo-titulo {
+        font-size: 20px;
+    }
+
+    .sobre-equipo-descripcion {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .sobre-equipo-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .sobre-equipo-miembro {
+        padding: 12px 8px;
+    }
+
+    .sobre-equipo-foto {
+        width: 65px;
+        height: 65px;
+        border-width: 2px;
+        margin-bottom: 8px;
+    }
+
+    .sobre-equipo-cargo {
+        font-size: 8px;
+    }
+
+    .sobre-equipo-nombre {
+        font-size: 13px;
+        margin: 4px 0 3px;
+    }
+
+    .sobre-equipo-bio {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .sobre-local-titulo {
+        font-size: 20px;
+    }
+
+    .sobre-local-descripcion {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .sobre-local-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .sobre-local-foto img {
+        height: 110px;
+    }
+
+    .sobre-local-pie {
+        font-size: 10px;
+        padding: 5px 6px;
+    }
+
+    .sobre-ubicacion {
+        padding: 15px 10px;
+    }
+
+    .sobre-ubicacion-titulo {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .sobre-ubicacion-texto {
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 0 0 10px;
+    }
+
+    .sobre-ubicacion-frase {
+        font-size: 11px;
+    }
+
+    .sobre-firma-nombre {
+        font-size: 14px;
+    }
+
+    .sobre-firma-cargo {
+        font-size: 10px;
+    }
+
+    .sobre-etiqueta {
+        font-size: 10px;
+        padding: 2px 12px;
+        margin-bottom: 8px;
+    }
+
+    .sobre-linea {
+        width: 30px;
+        height: 2px;
+        margin: 10px auto 0;
+    }
+
+    .sobre-icono {
+        font-size: 18px !important;
+    }
+}
+
+/* ===== PANTALLAS MUY PEQUEÑAS (Móviles pequeños) ===== */
+@media (max-width: 360px) {
+    .sobre-titulo {
+        font-size: 20px;
+    }
+
+    .sobre-subtitulo {
+        font-size: 11px;
+    }
+
+    .sobre-destacado {
+        font-size: 14px;
+        padding-left: 8px;
+    }
+
+    .sobre-historia p {
+        font-size: 11px;
+    }
+
+    .sobre-equipo-grid {
+        grid-template-columns: 1fr;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-local-grid {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .sobre-local-foto img {
+        height: 180px;
+    }
+
+    .sobre-mision-vision {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-equipo-foto {
+        width: 90px;
+        height: 90px;
+    }
+
+    .sobre-ubicacion {
+        padding: 12px 8px;
+    }
+
+    .sobre-ubicacion-titulo {
+        font-size: 15px;
+    }
+
+    .sobre-ubicacion-texto {
+        font-size: 11px;
+    }
+
+    .sobre-ubicacion-frase {
+        font-size: 10px;
+    }
+}
+
+/* ===== PANTALLAS EN ORIENTACIÓN HORIZONTAL (Móviles) ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .sobre-nosotros {
+        padding: 20px 15px;
+    }
+
+    .sobre-titulo {
+        font-size: 26px;
+    }
+
+    .sobre-encabezado {
+        margin-bottom: 25px;
+    }
+
+    .sobre-historia {
+        margin: 0 auto 25px;
+    }
+
+    .sobre-historia p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .sobre-mision-vision {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 25px 0;
+    }
+
+    .sobre-equipo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .sobre-equipo-foto {
+        width: 70px;
+        height: 70px;
+    }
+
+    .sobre-equipo-nombre {
+        font-size: 14px;
+    }
+
+    .sobre-equipo-bio {
+        font-size: 11px;
+    }
+
+    .sobre-local-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .sobre-local-foto img {
+        height: 120px;
+    }
+
+    .sobre-valores-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .sobre-valor-item {
+        padding: 10px;
+    }
+
+    .sobre-ubicacion {
+        padding: 15px;
+        margin-top: 10px;
+    }
+}

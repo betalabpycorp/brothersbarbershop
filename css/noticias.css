@@ -343,25 +343,110 @@
 }
 
 /* ============================================ */
-/* RESPONSIVE                                   */
+/* MEDIA QUERIES - NOTICIAS THE BROTHERS       */
 /* ============================================ */
 
-@media (max-width: 1024px) {
+/* ===== PANTALLAS MUY GRANDES (4K) ===== */
+@media (min-width: 1920px) {
     .noticias-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+    }
+
+    .noticia-imagen {
+        padding-top: 56.25%;
+    }
+
+    .noticia-titulo {
+        font-size: 20px;
+    }
+
+    .noticia-resumen {
+        font-size: 15px;
+    }
+}
+
+/* ===== PANTALLAS GRANDES (Laptops/Desktop) ===== */
+@media (max-width: 1200px) {
+    .noticias-grid {
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
 
     .noticia-imagen {
-        padding-top: 70%;
-        /* Relación un poco más alta en tablet */
+        padding-top: 60%;
+    }
+
+    .noticia-titulo {
+        font-size: 17px;
+    }
+
+    .noticia-resumen {
+        font-size: 13px;
     }
 }
 
+/* ===== PANTALLAS MEDIANAS (Tablets horizontales) ===== */
+@media (max-width: 1024px) {
+    .noticias-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .noticia-imagen {
+        padding-top: 65%;
+    }
+
+    .noticia-titulo {
+        font-size: 16px;
+    }
+
+    .noticia-resumen {
+        font-size: 13px;
+    }
+
+    .noticia-contenido {
+        padding: 16px;
+    }
+}
+
+/* ===== PANTALLAS TABLET (Vertical) ===== */
+@media (max-width: 850px) {
+    .noticias-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .noticia-imagen {
+        padding-top: 68%;
+    }
+
+    .noticia-contenido {
+        padding: 14px;
+    }
+
+    .noticia-titulo {
+        font-size: 15px;
+    }
+
+    .noticia-resumen {
+        font-size: 13px;
+    }
+
+    .noticia-boton {
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+}
+
+/* ===== PANTALLAS PEQUEÑAS (Tablets verticales) ===== */
 @media (max-width: 768px) {
     .noticias-grid {
-        grid-template-columns: 1fr;
-        max-width: 450px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 600px;
         margin: 0 auto;
     }
 
@@ -369,6 +454,39 @@
         font-size: 28px;
     }
 
+    .noticias-subtitulo {
+        font-size: 14px;
+    }
+
+    .noticia-imagen {
+        padding-top: 72%;
+    }
+
+    .noticia-contenido {
+        padding: 15px;
+    }
+
+    .noticia-titulo {
+        font-size: 15px;
+    }
+
+    .noticia-resumen {
+        font-size: 13px;
+    }
+
+    .noticia-boton {
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+
+    .noticia-fecha {
+        font-size: 11px;
+        padding: 4px 12px;
+        bottom: 12px;
+        left: 12px;
+    }
+
+    /* Modal */
     .modal-contenido {
         max-width: 95%;
         max-height: 95vh;
@@ -383,26 +501,152 @@
     }
 
     .modal-imagen {
-        padding-top: 55%;
-        /* Relación más alta en móvil */
+        padding-top: 50%;
+    }
+
+    .modal-texto {
+        font-size: 14px;
+    }
+}
+
+/* ===== PANTALLAS MÓVILES GRANDES ===== */
+@media (max-width: 600px) {
+    .noticias-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        max-width: 500px;
+        margin: 0 auto;
     }
 
     .noticia-imagen {
         padding-top: 75%;
     }
+
+    .noticia-contenido {
+        padding: 12px;
+    }
+
+    .noticia-titulo {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .noticia-resumen {
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .noticia-fecha {
+        font-size: 10px;
+        padding: 3px 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .noticia-boton {
+        font-size: 11px;
+        padding: 5px 14px;
+    }
+
+    .noticias-titulo-principal {
+        font-size: 24px;
+    }
+
+    .noticias-subtitulo {
+        font-size: 14px;
+    }
+
+    .noticias-etiqueta {
+        font-size: 12px;
+        padding: 3px 14px;
+    }
+
+    .noticias-linea {
+        width: 50px;
+    }
+
+    .noticias-encabezado {
+        margin-bottom: 30px;
+    }
 }
 
+/* ===== PANTALLAS MUY PEQUEÑAS (Móviles) ===== */
 @media (max-width: 480px) {
     .seccion-noticias {
         padding: 20px 10px;
+    }
+
+    .noticias-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .noticia-imagen {
         padding-top: 80%;
     }
 
+    .noticia-contenido {
+        padding: 10px;
+    }
+
+    .noticia-titulo {
+        font-size: 13px;
+        margin-bottom: 4px;
+        line-height: 1.3;
+    }
+
+    .noticia-resumen {
+        font-size: 11px;
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .noticia-fecha {
+        font-size: 9px;
+        padding: 2px 8px;
+        bottom: 8px;
+        left: 8px;
+    }
+
+    .noticia-boton {
+        font-size: 10px;
+        padding: 4px 12px;
+        border-width: 1.5px;
+    }
+
+    .noticias-titulo-principal {
+        font-size: 22px;
+    }
+
+    .noticias-subtitulo {
+        font-size: 13px;
+    }
+
+    .noticias-etiqueta {
+        font-size: 11px;
+        padding: 3px 14px;
+    }
+
+    .noticias-linea {
+        width: 40px;
+    }
+
+    .noticias-encabezado {
+        margin-bottom: 25px;
+    }
+
+    /* Modal móvil */
     .modal-imagen {
-        padding-top: 60%;
+        padding-top: 55%;
     }
 
     .modal-cerrar {
@@ -424,8 +668,341 @@
         font-size: 14px;
     }
 
+    .modal-fecha {
+        font-size: 11px;
+        padding: 3px 12px;
+    }
+}
+
+/* ===== PANTALLAS MUY PEQUEÑAS (Móviles pequeños) ===== */
+@media (max-width: 380px) {
+    .noticias-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        max-width: 320px;
+    }
+
+    .noticia-imagen {
+        padding-top: 85%;
+    }
+
+    .noticia-contenido {
+        padding: 8px;
+    }
+
+    .noticia-titulo {
+        font-size: 11px;
+        margin-bottom: 3px;
+    }
+
+    .noticia-resumen {
+        font-size: 10px;
+        margin-bottom: 6px;
+        -webkit-line-clamp: 2;
+    }
+
+    .noticia-fecha {
+        font-size: 8px;
+        padding: 2px 6px;
+        bottom: 6px;
+        left: 6px;
+    }
+
     .noticia-boton {
+        font-size: 9px;
+        padding: 3px 10px;
+        border-width: 1.5px;
+    }
+
+    .noticias-titulo-principal {
+        font-size: 20px;
+    }
+
+    .noticias-subtitulo {
         font-size: 12px;
-        padding: 6px 16px;
+    }
+
+    .modal-imagen {
+        padding-top: 60%;
+    }
+
+    .modal-titulo {
+        font-size: 18px;
+    }
+
+    .modal-texto {
+        font-size: 13px;
+    }
+}
+
+/* ===== PANTALLAS EN ORIENTACIÓN HORIZONTAL (Móviles) ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .noticias-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .noticia-imagen {
+        padding-top: 55%;
+    }
+
+    .noticia-contenido {
+        padding: 10px;
+    }
+
+    .noticia-titulo {
+        font-size: 13px;
+    }
+
+    .noticia-resumen {
+        font-size: 11px;
+        -webkit-line-clamp: 1;
+    }
+
+    .noticia-boton {
+        font-size: 10px;
+        padding: 4px 12px;
+    }
+
+    .noticia-fecha {
+        font-size: 9px;
+        padding: 2px 8px;
+        bottom: 8px;
+        left: 8px;
+    }
+
+    .seccion-noticias {
+        padding: 20px 15px;
+    }
+
+    .noticias-encabezado {
+        margin-bottom: 25px;
+    }
+
+    .noticias-titulo-principal {
+        font-size: 22px;
+    }
+
+    .noticias-subtitulo {
+        font-size: 13px;
+    }
+
+    .modal-imagen {
+        padding-top: 40%;
+    }
+}
+
+
+/* ============================================ */
+/* FOOTER - RESPONSIVE                         */
+/* ============================================ */
+
+/* ===== TABLETS ===== */
+@media (max-width: 1024px) {
+    .parte-superior {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .columna {
+        min-width: 140px;
+    }
+
+    .columna h4 {
+        font-size: 0.95rem;
+    }
+
+    .columna a {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== TABLETS VERTICALES ===== */
+@media (max-width: 850px) {
+    .parte-superior {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .columna {
+        min-width: 130px;
+    }
+
+    .columna h4 {
+        font-size: 0.9rem;
+    }
+
+    .columna a {
+        font-size: 0.8rem;
+    }
+
+    .columna p {
+        font-size: 0.8rem;
+    }
+
+    .redes-sociales {
+        gap: 8px;
+    }
+
+    .redes-sociales a {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+    }
+}
+
+/* ===== MÓVILES GRANDES ===== */
+@media (max-width: 768px) {
+    .parte-superior {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        align-items: start;
+    }
+
+    .columna {
+        min-width: unset;
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .columna h4 {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+
+    .columna a {
+        font-size: 0.8rem;
+        padding: 3px 0;
+    }
+
+    .columna p {
+        font-size: 0.8rem;
+    }
+
+    .redes-sociales {
+        justify-content: flex-start;
+        gap: 6px;
+    }
+
+    .redes-sociales a {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+}
+
+/* ===== MÓVILES PEQUEÑOS ===== */
+@media (max-width: 480px) {
+    .pie-pagina {
+        padding: 25px 15px 15px;
+        margin-top: 30px;
+    }
+
+    .parte-superior {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding-bottom: 15px;
+        text-align: left;
+    }
+
+    .columna h4 {
+        font-size: 0.8rem;
+        margin-bottom: 4px;
+    }
+
+    .columna a {
+        font-size: 0.75rem;
+        padding: 2px 0;
+    }
+
+    .columna p {
+        font-size: 0.75rem;
+    }
+
+    .redes-sociales {
+        gap: 5px;
+    }
+
+    .redes-sociales a {
+        font-size: 0.65rem;
+        padding: 3px 8px;
+    }
+
+    .parte-inferior {
+        font-size: 0.65rem;
+        padding-top: 12px;
+    }
+}
+
+/* ===== MÓVILES MUY PEQUEÑOS ===== */
+@media (max-width: 360px) {
+    .pie-pagina {
+        padding: 20px 10px 10px;
+    }
+
+    .parte-superior {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .columna h4 {
+        font-size: 0.75rem;
+    }
+
+    .columna a {
+        font-size: 0.7rem;
+    }
+
+    .columna p {
+        font-size: 0.7rem;
+    }
+
+    .redes-sociales a {
+        font-size: 0.6rem;
+        padding: 2px 6px;
+    }
+
+    .parte-inferior {
+        font-size: 0.6rem;
+        padding-top: 10px;
+    }
+}
+
+/* ===== LANDSCAPE MÓVIL ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .parte-superior {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        text-align: left;
+    }
+
+    .columna {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .columna h4 {
+        font-size: 0.8rem;
+    }
+
+    .columna a {
+        font-size: 0.7rem;
+    }
+
+    .columna p {
+        font-size: 0.7rem;
+    }
+
+    .redes-sociales {
+        justify-content: flex-start;
+    }
+
+    .redes-sociales a {
+        font-size: 0.6rem;
+        padding: 2px 8px;
     }
 }

@@ -102,3 +102,441 @@
 .caja-mapa h1{
     color: white;
 }
+
+/* ============================================ */
+/* CONTACTO - RESPONSIVE                       */
+/* ============================================ */
+
+/* ===== PANTALLAS MUY GRANDES (4K) ===== */
+@media (min-width: 1920px) {
+    .contenedor-formulario {
+        padding: 60px 40px;
+    }
+
+    .formulario {
+        max-width: 800px;
+        padding: 50px;
+    }
+
+    .formulario h1 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .campo label {
+        font-size: 20px;
+        min-width: 160px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 18px;
+        padding: 14px 16px;
+    }
+
+    .formulario button {
+        font-size: 1.3rem;
+        padding: 18px;
+    }
+
+    .caja-mapa {
+        width: 700px;
+        padding: 30px;
+    }
+
+    .caja-mapa h1 {
+        font-size: 32px;
+    }
+}
+
+/* ===== PANTALLAS GRANDES (Laptops/Desktop) ===== */
+@media (max-width: 1200px) {
+    .contenedor-formulario {
+        padding: 35px 20px;
+    }
+
+    .formulario {
+        max-width: 550px;
+        padding: 28px;
+    }
+
+    .caja-mapa {
+        width: 450px;
+    }
+}
+
+/* ===== PANTALLAS MEDIANAS (Tablets horizontales) ===== */
+@media (max-width: 1024px) {
+    .contenedor-formulario {
+        padding: 30px 15px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .formulario {
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .caja-mapa {
+        width: 100%;
+        max-width: 600px;
+        padding: 15px;
+    }
+
+    .caja-mapa h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .campo label {
+        font-size: 16px;
+        min-width: 110px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+}
+
+/* ===== PANTALLAS TABLET (Vertical) ===== */
+@media (max-width: 850px) {
+    .contenedor-formulario {
+        padding: 25px 15px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .formulario {
+        max-width: 550px;
+        padding: 25px;
+    }
+
+    .formulario h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        margin-bottom: 12px;
+    }
+
+    .campo label {
+        font-size: 15px;
+        min-width: unset;
+        width: 100%;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 15px;
+        padding: 10px 12px;
+        width: 100%;
+    }
+
+    .formulario button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .caja-mapa {
+        width: 100%;
+        max-width: 550px;
+        padding: 15px;
+    }
+
+    .caja-mapa h1 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+}
+
+/* ===== PANTALLAS PEQUEÑAS (Tablets verticales) ===== */
+@media (max-width: 768px) {
+    .contenedor-formulario {
+        padding: 20px 12px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .formulario {
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .formulario h1 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .campo label {
+        font-size: 14px;
+        min-width: unset;
+        width: 100%;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 14px;
+        padding: 9px 12px;
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .campo textarea {
+        min-height: 70px;
+    }
+
+    .formulario button {
+        font-size: 0.95rem;
+        padding: 12px;
+        border-radius: 6px;
+        margin-top: 8px;
+    }
+
+    .caja-mapa {
+        width: 100%;
+        max-width: 500px;
+        padding: 12px;
+    }
+
+    .caja-mapa h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+/* ===== PANTALLAS MÓVILES GRANDES ===== */
+@media (max-width: 600px) {
+    .contenedor-formulario {
+        padding: 15px 10px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .formulario {
+        max-width: 100%;
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .formulario h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-bottom: 10px;
+    }
+
+    .campo label {
+        font-size: 13px;
+        min-width: unset;
+        width: 100%;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 13px;
+        padding: 8px 10px;
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .campo textarea {
+        min-height: 60px;
+    }
+
+    .formulario button {
+        font-size: 0.9rem;
+        padding: 10px;
+        border-radius: 6px;
+        margin-top: 6px;
+    }
+
+    .caja-mapa {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .caja-mapa h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+/* ===== PANTALLAS MUY PEQUEÑAS (Móviles) ===== */
+@media (max-width: 480px) {
+    .contenedor-formulario {
+        padding: 12px 8px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .formulario {
+        padding: 15px 12px;
+        border-radius: 12px;
+    }
+
+    .formulario h1 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .campo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+        margin-bottom: 8px;
+    }
+
+    .campo label {
+        font-size: 12px;
+        min-width: unset;
+        width: 100%;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 12px;
+        padding: 7px 10px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .campo textarea {
+        min-height: 50px;
+    }
+
+    .formulario button {
+        font-size: 0.85rem;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .caja-mapa {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .caja-mapa h1 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+/* ===== PANTALLAS MUY PEQUEÑAS (Móviles pequeños) ===== */
+@media (max-width: 360px) {
+    .contenedor-formulario {
+        padding: 10px 5px;
+        gap: 12px;
+    }
+
+    .formulario {
+        padding: 12px 8px;
+        border-radius: 10px;
+    }
+
+    .formulario h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .campo label {
+        font-size: 11px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    .formulario button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .caja-mapa h1 {
+        font-size: 14px;
+    }
+}
+
+/* ===== PANTALLAS EN ORIENTACIÓN HORIZONTAL (Móviles) ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .contenedor-formulario {
+        padding: 15px 20px;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .formulario {
+        max-width: 60%;
+        padding: 15px;
+    }
+
+    .formulario h1 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .campo {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+    }
+
+    .campo label {
+        font-size: 13px;
+        min-width: 90px;
+        width: auto;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+
+    .formulario button {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .caja-mapa {
+        max-width: 35%;
+        padding: 10px;
+    }
+
+    .caja-mapa h1 {
+        font-size: 16px;
+    }
+}
