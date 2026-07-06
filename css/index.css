@@ -1369,15 +1369,13 @@ header a:hover{
 
 
 /* ============================================ */
-/* HEADER CON HAMBURGUESA                      */
+/* HEADER CON HAMBURGUESA - COMPLETO           */
 /* ============================================ */
 
-/* Header existente - se mantiene igual pero con ajustes */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
     padding: 15px;
     position: fixed;
     top: 0;
@@ -1385,30 +1383,28 @@ header {
     width: 100%;
     z-index: 1000;
     background: #000000;
-    height: 70px;
+    height: 80px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
-    border-bottom: 2px solid #C9A66B;
 }
 
-/* Contenedor interno para centrar y posicionar el botón */
 .header-contenido {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 
-/* Logo - sin borde redondo */
 .logo {
     width: 150px;
     height: auto;
     flex-shrink: 0;
+    order: 2;
+    margin-left: auto;
 }
 
-/* ===== NAVEGACIÓN ===== */
 .nav-links {
     display: flex;
     align-items: center;
@@ -1416,6 +1412,7 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+    order: 1;
 }
 
 .nav-links a {
@@ -1433,7 +1430,6 @@ header {
     color: white;
 }
 
-/* ===== BOTÓN HAMBURGUESA ===== */
 .boton-hamburguesa {
     display: none;
     flex-direction: column;
@@ -1443,8 +1439,8 @@ header {
     cursor: pointer;
     padding: 8px;
     z-index: 1001;
-    position: absolute;
-    right: 0;
+    order: 3;
+    margin-left: 15px;
 }
 
 .boton-hamburguesa span {
@@ -1456,7 +1452,6 @@ header {
     transition: 0.3s ease;
 }
 
-/* Animación hamburguesa -> X */
 .boton-hamburguesa.activo span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 6px);
 }
@@ -1469,7 +1464,6 @@ header {
     transform: rotate(-45deg) translate(5px, -6px);
 }
 
-/* ===== OVERLAY (fondo oscuro) ===== */
 .overlay-menu {
     display: none;
     position: fixed;
@@ -1488,20 +1482,28 @@ header {
 /* ===== RESPONSIVE - MÓVILES ===== */
 @media (max-width: 768px) {
     header {
-        height: 60px;
+        height: 70px;
         padding: 8px 15px;
     }
 
-    .logo {
-        width: 45px;
+    .header-contenido {
+        justify-content: space-between;
     }
 
-    /* Mostrar botón hamburguesa */
+    .logo {
+        width: 80px;
+        order: 1;
+        margin-left: 0;
+    }
+
     .boton-hamburguesa {
         display: flex;
+        order: 2;
+        position: relative;
+        margin-left: auto;
+        margin-right: 30px;  /* Esto lo separa del borde derecho */
     }
 
-    /* Ocultar navegación y mostrar como menú lateral */
     .nav-links {
         position: fixed;
         top: 0;
@@ -1519,6 +1521,7 @@ header {
         transition: right 0.4s ease;
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
         z-index: 999;
+        order: 3;
     }
 
     .nav-links.abierto {
@@ -1533,19 +1536,22 @@ header {
     }
 
     body {
-        padding-top: 60px;
+        padding-top: 70px;
     }
 }
 
-/* ===== MÓVILES PEQUEÑOS ===== */
 @media (max-width: 480px) {
     header {
-        height: 55px;
+        height: 65px;
         padding: 6px 12px;
     }
 
     .logo {
-        width: 40px;
+        width: 70px;
+    }
+
+    .boton-hamburguesa {
+        margin-right: 25px;  /* Separación del borde en móviles pequeños */
     }
 
     .boton-hamburguesa span {
@@ -1566,18 +1572,22 @@ header {
     }
 
     body {
-        padding-top: 55px;
+        padding-top: 65px;
     }
 }
 
 @media (max-width: 360px) {
     header {
-        height: 50px;
+        height: 60px;
         padding: 5px 10px;
     }
 
     .logo {
-        width: 35px;
+        width: 60px;
+    }
+
+    .boton-hamburguesa {
+        margin-right: 20px;  /* Separación del borde en móviles muy pequeños */
     }
 
     .boton-hamburguesa span {
@@ -1596,6 +1606,6 @@ header {
     }
 
     body {
-        padding-top: 50px;
+        padding-top: 60px;
     }
 }
