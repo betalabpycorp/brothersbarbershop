@@ -63,7 +63,7 @@ const noticias = [
 },
     {
         id: 6,
-        imagen: 'fotos/noticia6.jpg',
+        imagen: 'img/cursobarber.png',
         fecha: '10 Enero 2026',
         titulo: 'Curso de barbería profesional',
         resumen: 'Abrimos las inscripciones para nuestro curso intensivo de barbería. Aprendé las técnicas de los mejores...',
