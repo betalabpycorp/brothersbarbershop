@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,13 +12,28 @@
 
     <!--Header-->
     <header>
-        <img class="logo" src="img/logobarber.png" alt="">
-            <a href="index.html">Inicio</a>
+    <div class="header-contenido">
+        <img class="logo" src="img/logobarber.png" alt="The Brothers" />
+        
+        <!-- Botón hamburguesa (solo visible en móviles) -->
+        <button class="boton-hamburguesa" id="botonHamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
             <a href="servicios.html">Servicios</a>
+            <a href="galeria.html">Galería</a>
             <a href="contactos.html">Contactos</a>
             <a href="nosotros.html">Sobre Nosotros</a>
             <a href="noticias.html">Noticias</a>
-    </header>
+        </nav>
+    </div>
+</header>
+
+<!-- Overlay para cerrar el menú al hacer clic fuera -->
+<div class="overlay-menu" id="overlayMenu"></div>
 
     <hr>
 
@@ -77,6 +92,7 @@
 
     <!--Scripts-->
     <script src="js/galeriacomp.js"></script>
+    <script src="js/btnhamburguesa.js"></script>
 </body>
 
 </html>
