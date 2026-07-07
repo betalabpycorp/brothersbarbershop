@@ -104,11 +104,6 @@
     color: white;
 }
 
-/* ============================================ */
-/* CONTACTO - RESPONSIVE                       */
-/* ============================================ */
-
-/* ===== PANTALLAS MUY GRANDES (4K) ===== */
 @media (min-width: 1920px) {
     .contenedor-formulario {
         padding: 60px 40px;
@@ -151,7 +146,7 @@
     }
 }
 
-/* ===== PANTALLAS GRANDES (Laptops/Desktop) ===== */
+/*(Laptops/Desktop)*/
 @media (max-width: 1200px) {
     .contenedor-formulario {
         padding: 35px 20px;
@@ -167,7 +162,6 @@
     }
 }
 
-/* ===== PANTALLAS MEDIANAS (Tablets horizontales) ===== */
 @media (max-width: 1024px) {
     .contenedor-formulario {
         padding: 30px 15px;
@@ -204,7 +198,7 @@
     }
 }
 
-/* ===== PANTALLAS TABLET (Vertical) ===== */
+/*Pantallas tablet*/
 @media (max-width: 850px) {
     .contenedor-formulario {
         padding: 25px 15px;
@@ -260,7 +254,7 @@
     }
 }
 
-/* ===== PANTALLAS PEQUEÑAS (Tablets verticales) ===== */
+/*Pantallas pequeñas*/
 @media (max-width: 768px) {
     .contenedor-formulario {
         padding: 20px 12px;
@@ -324,7 +318,7 @@
     }
 }
 
-/* ===== PANTALLAS MÓVILES GRANDES ===== */
+/*Pantallas moviles*/
 @media (max-width: 600px) {
     .contenedor-formulario {
         padding: 15px 10px;
@@ -388,7 +382,7 @@
     }
 }
 
-/* ===== PANTALLAS MUY PEQUEÑAS (Móviles) ===== */
+/*Pantallas muy pequeñas*/
 @media (max-width: 480px) {
     .contenedor-formulario {
         padding: 12px 8px;
@@ -450,7 +444,7 @@
     }
 }
 
-/* ===== PANTALLAS MUY PEQUEÑAS (Móviles pequeños) ===== */
+
 @media (max-width: 360px) {
     .contenedor-formulario {
         padding: 10px 5px;
@@ -488,7 +482,6 @@
     }
 }
 
-/* ===== PANTALLAS EN ORIENTACIÓN HORIZONTAL (Móviles) ===== */
 @media (max-height: 500px) and (orientation: landscape) {
     .contenedor-formulario {
         padding: 15px 20px;
@@ -540,5 +533,16 @@
     .caja-mapa h1 {
         font-size: 16px;
     }
+}
+
+/* Mensaje de estado del formulario */
+#mensajeEstado {
+    display: none;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    animation: fadeIn 0.5s ease;
 }
 

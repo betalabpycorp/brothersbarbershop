@@ -574,7 +574,7 @@ header a:hover{
     }
 
     .galeria {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 15px;
         padding: 20px;
     }
@@ -632,7 +632,7 @@ header a:hover{
 /* ===== PANTALLAS TABLET (Vertical) ===== */
 @media (max-width: 850px) {
     .servicios {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 15px;
         padding: 15px;
         max-width: 750px;
@@ -644,7 +644,7 @@ header a:hover{
     }
 
     .galeria {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 12px;
         padding: 15px;
     }
@@ -752,7 +752,7 @@ header a:hover{
 
     /* Servicios - 3 columnas en tablet */
     .servicios {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 12px;
         padding: 12px;
         max-width: 650px;
@@ -778,7 +778,7 @@ header a:hover{
 
     /* Galería - 4 columnas en tablet */
     .galeria {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 10px;
         padding: 15px;
         margin: 0 10px;
@@ -904,13 +904,20 @@ header a:hover{
         margin-bottom: 4px;
     }
 
-    .sp-categoria {
+    /* Precio y categoría en una sola línea */
+    .contenido .sp-categoria,
+    .contenido .sp-precio {
+        display: inline-block;
         font-size: 10px;
     }
 
+    .sp-categoria {
+        color: red;
+        margin-right: 5px;
+    }
+
     .sp-precio {
-        font-size: 11px;
-        font-weight: 700;
+        color: rgb(9, 255, 0);
     }
 
     /* Galería - 4 columnas en móvil */
@@ -1013,9 +1020,9 @@ header a:hover{
         height: 120px;
     }
 
-    /* Servicios - 4 columnas en móvil pequeño */
+    /* Servicios - 3 columnas en móvil */
     .servicios {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 6px;
         padding: 8px;
     }
@@ -1035,15 +1042,20 @@ header a:hover{
         margin-bottom: 3px;
     }
 
-    .sp-categoria {
+    /* Precio y categoría en una sola línea */
+    .contenido .sp-categoria,
+    .contenido .sp-precio {
+        display: inline-block;
         font-size: 9px;
-        display: block;
+    }
+
+    .sp-categoria {
+        color: red;
+        margin-right: 4px;
     }
 
     .sp-precio {
-        font-size: 10px;
-        font-weight: 700;
-        display: block;
+        color: rgb(9, 255, 0);
     }
 
     .titulos {
@@ -1058,7 +1070,7 @@ header a:hover{
 
     /* Galería - 4 columnas en móvil pequeño */
     .galeria {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 6px;
         padding: 8px;
         margin: 0 5px;
@@ -1190,9 +1202,9 @@ header a:hover{
         font-size: 11px;
     }
 
-    /* Servicios - 4 columnas muy compactas */
+    /* Servicios - 3 columnas muy compactas */
     .servicios {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 4px;
         padding: 6px;
     }
@@ -1207,17 +1219,25 @@ header a:hover{
         font-size: 10px;
     }
 
-    .sp-categoria {
+    /* Precio y categoría en una sola línea */
+    .contenido .sp-categoria,
+    .contenido .sp-precio {
+        display: inline-block;
         font-size: 8px;
     }
 
+    .sp-categoria {
+        color: red;
+        margin-right: 3px;
+    }
+
     .sp-precio {
-        font-size: 9px;
+        color: rgb(9, 255, 0);
     }
 
     /* Galería - 4 columnas muy compactas */
     .galeria {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 4px;
         padding: 6px;
     }
@@ -1305,6 +1325,22 @@ header a:hover{
     .contenido {
         padding: 12px;
         font-size: 11px;
+    }
+
+    /* Precio y categoría en una sola línea en landscape */
+    .contenido .sp-categoria,
+    .contenido .sp-precio {
+        display: inline-block;
+        font-size: 10px;
+    }
+
+    .sp-categoria {
+        color: red;
+        margin-right: 4px;
+    }
+
+    .sp-precio {
+        color: rgb(9, 255, 0);
     }
 
     .galeria {

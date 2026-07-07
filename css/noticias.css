@@ -60,6 +60,9 @@
 
 /* ---------- TARJETA DE NOTICIA ---------- */
 .noticia-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background: #1a1a1a;
     border-radius: 12px;
     overflow: hidden;
@@ -146,6 +149,9 @@
 /* ---------- CONTENIDO ---------- */
 .noticia-contenido {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .noticia-titulo {
@@ -165,6 +171,7 @@
     color: #aaaaaa;
     line-height: 1.6;
     margin: 0 0 15px 0;
+    flex: 1;
 }
 
 .noticia-boton {
@@ -180,6 +187,9 @@
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    margin-top: auto;
+    align-self: flex-start;  
+    width: auto;  
 }
 
 .noticia-boton:hover {
@@ -572,6 +582,58 @@
     .noticias-encabezado {
         margin-bottom: 30px;
     }
+
+    /* ===== MODAL MEJORADO EN MÓVIL ===== */
+    .modal {
+        padding: 8px;
+    }
+
+    .modal-contenido {
+        border-radius: 12px;
+        max-height: 96vh;
+    }
+
+    .modal-imagen {
+        padding-top: 48%;
+    }
+
+    .modal-imagen img {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .modal-imagen::after {
+        height: 40px;
+    }
+
+    .modal-body {
+        padding: 16px 18px 20px;
+    }
+
+    .modal-titulo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .modal-texto {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .modal-fecha {
+        font-size: 11px;
+        padding: 3px 12px;
+        margin-bottom: 8px;
+    }
+
+    .modal-cerrar {
+        font-size: 24px;
+        width: 32px;
+        height: 32px;
+        margin: 5px 8px 0 0;
+        top: 6px;
+        right: 8px;
+    }
 }
 
 /* ===== PANTALLAS MUY PEQUEÑAS (Móviles) ===== */
@@ -644,33 +706,57 @@
         margin-bottom: 25px;
     }
 
-    /* Modal móvil */
-    .modal-imagen {
-        padding-top: 55%;
+    /* ===== MODAL MEJORADO EN MÓVIL PEQUEÑO ===== */
+    .modal {
+        padding: 5px;
     }
 
-    .modal-cerrar {
-        font-size: 28px;
-        width: 35px;
-        height: 35px;
-        margin: 8px 10px 0 0;
+    .modal-contenido {
+        border-radius: 10px;
+        max-height: 98vh;
+        border-width: 1px;
+    }
+
+    .modal-imagen {
+        padding-top: 50%;
+    }
+
+    .modal-imagen img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .modal-imagen::after {
+        height: 30px;
     }
 
     .modal-body {
-        padding: 15px;
+        padding: 12px 14px 16px;
     }
 
     .modal-titulo {
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 8px;
     }
 
     .modal-texto {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 1.6;
+        margin-bottom: 8px;
     }
 
     .modal-fecha {
-        font-size: 11px;
-        padding: 3px 12px;
+        font-size: 10px;
+        padding: 2px 10px;
+        margin-bottom: 6px;
+    }
+
+    .modal-cerrar {
+        font-size: 20px;
+        width: 28px;
+        height: 28px;
+        margin: 4px 6px 0 0;
+        top: 5px;
+        right: 6px;
     }
 }
 
@@ -722,16 +808,34 @@
         font-size: 12px;
     }
 
+    /* ===== MODAL MEJORADO EN MÓVIL MUY PEQUEÑO ===== */
     .modal-imagen {
-        padding-top: 60%;
+        padding-top: 55%;
+    }
+
+    .modal-body {
+        padding: 10px 12px 14px;
     }
 
     .modal-titulo {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .modal-texto {
-        font-size: 13px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .modal-fecha {
+        font-size: 9px;
+        padding: 2px 8px;
+    }
+
+    .modal-cerrar {
+        font-size: 18px;
+        width: 25px;
+        height: 25px;
+        margin: 3px 5px 0 0;
     }
 }
 
@@ -789,7 +893,53 @@
     }
 
     .modal-imagen {
-        padding-top: 40%;
+        padding-top: 35%;
+    }
+
+    .modal {
+        padding: 5px 10px;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    .modal-contenido {
+        max-height: 92vh;
+        max-width: 90%;
+    }
+
+    .modal-imagen {
+        padding-top: 30%;
+        max-height: 40vh;
+    }
+
+    .modal-body {
+        padding: 12px 18px 16px;
+    }
+
+    .modal-titulo {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .modal-texto {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 6px;
+    }
+
+    .modal-cerrar {
+        font-size: 22px;
+        width: 30px;
+        height: 30px;
+        margin: 4px 8px 0 0;
+        top: 5px;
+        right: 6px;
+    }
+
+    .modal-fecha {
+        font-size: 10px;
+        padding: 2px 10px;
+        margin-bottom: 6px;
     }
 }
 
