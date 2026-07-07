@@ -1,0 +1,188 @@
+/* ============================================ */
+/* POLÍTICA DE PRIVACIDAD - ESTILOS            */
+/* ============================================ */
+
+.politica-privacidad {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== TÍTULO ===== */
+
+.politica-privacidad h1 {
+    color: #C9A66B;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.politica-privacidad .fecha {
+    text-align: center;
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+/* ===== SECCIONES ===== */
+
+.politica-privacidad .seccion {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s ease;
+}
+
+.politica-privacidad .seccion:hover {
+    border-color: #C9A66B;
+}
+
+.politica-privacidad .seccion h2 {
+    color: #C9A66B;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+
+.politica-privacidad .seccion p {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 12px 0;
+}
+
+.politica-privacidad .seccion ul {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.8;
+    padding-left: 20px;
+    margin: 0 0 12px 0;
+}
+
+.politica-privacidad .seccion ul li {
+    margin-bottom: 8px;
+}
+
+.politica-privacidad .seccion ul li strong {
+    color: #C9A66B;
+}
+
+.politica-privacidad .seccion .destacado {
+    color: #C9A66B;
+    font-weight: 600;
+}
+
+/* ===== BOTÓN VOLVER ===== */
+
+.politica-privacidad .volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #C9A66B;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.politica-privacidad .volver:hover {
+    background-color: #b8924f;
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER DE LA POLÍTICA ===== */
+
+.politica-privacidad .footer-politica {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #2a2a2a;
+    color: #888888;
+    font-size: 13px;
+}
+
+/* ============================================ */
+/* RESPONSIVE                                  */
+/* ============================================ */
+
+/* ===== TABLETS ===== */
+
+@media (max-width: 768px) {
+    .politica-privacidad {
+        padding: 30px 15px;
+    }
+
+    .politica-privacidad h1 {
+        font-size: 28px;
+    }
+
+    .politica-privacidad .seccion {
+        padding: 20px;
+    }
+
+    .politica-privacidad .seccion h2 {
+        font-size: 19px;
+    }
+
+    .politica-privacidad .seccion p,
+    .politica-privacidad .seccion ul {
+        font-size: 14px;
+    }
+}
+
+/* ===== MÓVILES ===== */
+
+@media (max-width: 480px) {
+    .politica-privacidad {
+        padding: 20px 10px;
+    }
+
+    .politica-privacidad h1 {
+        font-size: 24px;
+    }
+
+    .politica-privacidad .seccion {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .politica-privacidad .seccion h2 {
+        font-size: 17px;
+    }
+
+    .politica-privacidad .seccion p,
+    .politica-privacidad .seccion ul {
+        font-size: 13px;
+    }
+
+    .politica-privacidad .volver {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .politica-privacidad .fecha {
+        font-size: 12px;
+    }
+}
+
+/* ===== MÓVILES MUY PEQUEÑOS ===== */
+
+@media (max-width: 360px) {
+    .politica-privacidad h1 {
+        font-size: 20px;
+    }
+
+    .politica-privacidad .seccion h2 {
+        font-size: 15px;
+    }
+
+    .politica-privacidad .seccion p,
+    .politica-privacidad .seccion ul {
+        font-size: 12px;
+    }
+}

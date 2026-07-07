@@ -41,7 +41,7 @@ hr {
     border: none;           
     height: 2px;            
     background-color: #C9A66B; 
-    margin: 40px 0;
+    margin-top: 20px;
 }
 
 .logo{
@@ -162,6 +162,14 @@ header a:hover{
     max-width: 1200px;
     margin: 0 auto;
     justify-items: center; 
+    align-items: stretch;
+}
+
+.cardservicios {
+    display: flex;  
+    flex-direction: column; 
+    height: 100%;  
+    width: 100%;
 }
 
 .contenido {
@@ -2288,8 +2296,6 @@ header {
         right: 8px;
     }
 }
-
-
 /* ============================================ */
 /* MODAL PARA GALERÍA - CENTRADO               */
 /* ============================================ */
@@ -2350,12 +2356,12 @@ header {
 }
 
 /* ============================================ */
-/* MÓVILES                                      */
+/* TABLETS Y MÓVILES - CENTRADO FORZADO        */
 /* ============================================ */
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .modal-galeria {
-        padding: 10px;
+        padding: 15px;
     }
 
     .modal-galeria-contenido {
@@ -2363,9 +2369,49 @@ header {
         left: 50% !important;
         top: 50% !important;
         transform: translate(-50%, -50%) !important;
+        width: 92% !important;
+        max-width: 92% !important;
+        margin: 0 !important;
+        max-height: 90vh !important;
+    }
+
+    .modal-galeria-contenido img {
+        max-height: 82vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-galeria {
+        padding: 12px;
+    }
+
+    .modal-galeria-contenido {
         width: 94% !important;
         max-width: 94% !important;
-        margin: 0 !important;
+        max-height: 88vh !important;
+    }
+
+    .modal-galeria-cerrar {
+        top: 8px;
+        right: 10px;
+        width: 34px;
+        height: 34px;
+        font-size: 22px;
+    }
+
+    .modal-galeria-contenido img {
+        max-height: 78vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-galeria {
+        padding: 10px;
+    }
+
+    .modal-galeria-contenido {
+        width: 94% !important;
+        max-width: 94% !important;
         max-height: 90vh !important;
     }
 
@@ -2400,4 +2446,57 @@ header {
         height: 28px;
         font-size: 17px;
     }
+}
+
+/* ============================================ */
+/* LANDSCAPE                                    */
+/* ============================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .modal-galeria {
+        padding: 10px 20px;
+    }
+
+    .modal-galeria-contenido {
+        width: 70% !important;
+        max-width: 70% !important;
+        max-height: 88vh !important;
+    }
+
+    .modal-galeria-contenido img {
+        max-height: 75vh;
+    }
+
+    .modal-galeria-cerrar {
+        top: 6px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+/* Quitar el highlight azul en todos los elementos */
+* {
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+}
+
+/* Quitar outline en focus para inputs, botones y enlaces */
+input:focus,
+button:focus,
+select:focus,
+textarea:focus,
+a:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Para botones en específico */
+button {
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Para enlaces */
+a {
+    -webkit-tap-highlight-color: transparent !important;
 }
