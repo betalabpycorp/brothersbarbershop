@@ -37,6 +37,12 @@
 <div class="overlay-menu" id="overlayMenu"></div>
 
     <!--Formulario-->
+
+    <!-- Mensaje de estado -->
+        <div id="mensajeEstado" style="display: none; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; font-weight: 600;">
+            
+        </div>
+
     <section class="contenedor-formulario">
         <h1 class="titulos">Formulario</h1>
         <div class="formulario">
@@ -102,7 +108,7 @@
                     <textarea id="mensaje" placeholder="Escriba su mensaje aquí" required></textarea>
                 </div>
 
-                <button type="submit">Enviar consulta</button>
+                <button type="button" id="btnEnviar" onclick="enviarFormulario()">Enviar consulta</button>
 
             </form>
         </div>
@@ -120,13 +126,6 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
     <!--Información y redes-->
 <footer class="pie-pagina">
     <!-- Parte superior -->
@@ -134,13 +133,15 @@
         <!--Columna 1-->
         <div class="columna">
             <h4>Enlaces</h4>
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="galeria.html">Galería</a>
-            <a href="#faq">Preguntas</a>
-            <a href="contactos.html">Contacto</a>
-            <a href="politica.html">Politica de privacidad</a>
-            <a href="desarrolladores.html">Desarrolladores</a>
+            <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="nosotros.html">Sobre Nosotros</a>
+                <a href="noticias.html">Noticias</a>
+                <a href="contactos.html">Contacto</a>
+                <a href="politica.html">Política de Privacidad</a>
+                <a href="desarrolladores.html">Desarrollador</a>
         </div>
 
         <!--Columna 2-->
@@ -162,15 +163,15 @@
         <div class="columna">
             <h4>Redes Sociales</h4>
             <div class="redes-sociales">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">WhatsApp</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://web.whatsapp.com/">WhatsApp</a>
             </div>
         </div>
     </div>
 
     <div class="parte-inferior">
-        <p>© 2024 The Brothers Barbershop - Itauguá, Paraguay</p>
+        <p>© 2021 The Brothers Barbershop - Itauguá, Paraguay</p>
     </div>
 </footer>
 
@@ -179,6 +180,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script src="js/contacto.js"></script>
+<script src="js/emailjs.js"></script>
 </body>
 
 </html>
