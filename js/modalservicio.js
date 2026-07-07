@@ -1,9 +1,9 @@
-// ============================================ //
-// SERVICIOS Y MODAL - ARCHIVO UNIFICADO       //
-// ============================================ //
+/* ============================================ */
+/* MODAL PARA SERVICIOS - LÓGICA               */
+/* ============================================ */
 
+// Datos de los servicios
 const servicios = [
-
     {
         img: "img/corte-clasico.png",
         nombre: "Corte Clásico",
@@ -103,7 +103,7 @@ const modalDescri = document.getElementById('modalDescri');
 const modalCategoria = document.getElementById('modalCategoria');
 const modalPrecio = document.getElementById('modalPrecio');
 
-// Función GLOBAL para abrir modal (se llama desde onclick)
+// Función para abrir modal con los datos del servicio
 function abrirModalServicio(index) {
     const servicio = servicios[index];
     
@@ -124,38 +124,19 @@ function cerrarModal() {
     document.body.style.overflow = 'auto';
 }
 
-// Eventos del modal
+// Eventos para cerrar el modal
 modalCerrar.addEventListener('click', cerrarModal);
+
+// Cerrar al hacer clic fuera del contenido
 modal.addEventListener('click', function(e) {
-    if (e.target === modal) cerrarModal();
+    if (e.target === modal) {
+        cerrarModal();
+    }
 });
+
+// Cerrar con tecla ESC
 document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && modal.style.display === 'flex') cerrarModal();
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
+        cerrarModal();
+    }
 });
-
-// ============================================ //
-// MOSTRAR SERVICIOS                           //
-// ============================================ //
-
-function mostrarServicios() {
-    let contenedor = document.getElementById('servicios');
-
-    servicios.forEach((servicio, index) => {
-        let card = document.createElement('div');
-        card.className = 'cardservicios';
-
-        card.innerHTML = `
-            <div class="contenido">
-                <img class="logo" src="${servicio.img}" alt="${servicio.nombre}">
-                <h4 class="nombre-servicio">${servicio.nombre}</h4>
-                <h4><span class="sp-categoria">Categoría: </span> ${servicio.categoria}</h4>
-                <h4><span class="sp-precio">Precio:</span> ${servicio.precio}</h4>
-                <button class="ver-mas" onclick="abrirModalServicio(${index})">Ver más</button>
-            </div>
-        `;
-
-        contenedor.appendChild(card);
-    });
-}
-
-document.addEventListener('DOMContentLoaded', mostrarServicios);

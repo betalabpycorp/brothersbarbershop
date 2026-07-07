@@ -93,6 +93,27 @@
     </div>
 </footer>
 
+<!--Modal servicios-->
+<div class="modal-servicios" id="modal-servicios">
+    <div class="modal-servicios-contenido" id="modal-servicios-contenido">
+        
+        <!-- Botón cerrar -->
+        <button class="modal-servicios-cerrar" id="modalCerrar">✕</button>
+
+        <!-- Contenido del modal (se llena con JavaScript) -->
+        <div id="modalBody">
+            <img id="modalImg" src="" alt="" class="modal-detalle-img">
+            <div class="modal-detalle-info">
+                <h2 id="modalTitulo"></h2>
+                <p class="modal-detalle-desc" id="modalDescri"></p>
+                <p><span class="modal-detalle-label">Categoría:</span> <span id="modalCategoria"></span></p>
+                <p><span class="modal-detalle-label">Precio:</span> <span id="modalPrecio"></span></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
     <!--Scripts-->
     <script src="js/servicios.js"></script>
     <script src="js/btnhamburguesa.js"></script>
