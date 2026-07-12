@@ -1,7 +1,6 @@
 (function() {
     'use strict';
 
-
     let botonModo = document.getElementById('btnModo');
 
     if (!botonModo) {
@@ -16,6 +15,12 @@
     const icono = botonModo.querySelector('i');
     const cuerpo = document.body;
 
+    function cambiarLogo(ruta) {
+        const logo = document.getElementById('logoPrincipal');
+        if (logo) {
+            logo.src = ruta;
+        }
+    }
 
     function cambiarModo(modo) {
         if (modo === 'claro') {
@@ -26,7 +31,6 @@
             }
             localStorage.setItem('modo', 'claro');
             botonModo.setAttribute('aria-label', 'Cambiar a modo oscuro');
-            // Cambiar logo a versión clara
             cambiarLogo('img/logobarberclaro.png');
         } else {
             cuerpo.classList.add('modo-oscuro');
@@ -36,7 +40,6 @@
             }
             localStorage.setItem('modo', 'oscuro');
             botonModo.setAttribute('aria-label', 'Cambiar a modo claro');
-            // Cambiar logo a versión oscura
             cambiarLogo('img/logobarber.png');
         }
     }
@@ -64,18 +67,6 @@
         }
     }
 
-    function cambiarLogo(ruta) {
-        const logos = document.querySelectorAll('.logo');
-        logos.forEach(function(logo) {
-            // Mantener las mismas propiedades que el logo original
-            logo.src = ruta;
-            logo.alt = 'The Brothers';
-            // Si el logo tiene clases adicionales, se mantienen
-            // Solo cambiamos el src
-        });
-    }
-
-
     if (botonModo) {
         botonModo.addEventListener('click', alternarModo);
     }
@@ -95,7 +86,6 @@
         document.body.appendChild(botonSubir);
     }
 
-// Botón Arriba
     if (botonSubir) {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 1000) {
@@ -116,8 +106,7 @@
     console.log('✅ Botón volver arriba inicializado');
 
 })();
-
-// Modo calro oscuro
+// Modo claro oscuro
 
 const estilos = document.createElement('style');
 estilos.textContent = `
