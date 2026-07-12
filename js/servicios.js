@@ -1,7 +1,3 @@
-// ============================================ //
-// SERVICIOS Y MODAL - ARCHIVO UNIFICADO       //
-// ============================================ //
-
 const servicios = [
 
     {
@@ -90,10 +86,6 @@ const servicios = [
     }
 ];
 
-// ============================================ //
-// MODAL - FUNCIONES                           //
-// ============================================ //
-
 // Elementos del modal
 const modal = document.getElementById('modal-servicios');
 const modalCerrar = document.getElementById('modalCerrar');
@@ -103,7 +95,7 @@ const modalDescri = document.getElementById('modalDescri');
 const modalCategoria = document.getElementById('modalCategoria');
 const modalPrecio = document.getElementById('modalPrecio');
 
-// Función GLOBAL para abrir modal (se llama desde onclick)
+// Función GLOBAL para abrir modal
 function abrirModalServicio(index) {
     const servicio = servicios[index];
     
@@ -133,10 +125,7 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && modal.style.display === 'flex') cerrarModal();
 });
 
-// ============================================ //
-// MOSTRAR SERVICIOS                           //
-// ============================================ //
-
+//Mostrar Servicios
 function mostrarServicios() {
     let contenedor = document.getElementById('servicios');
 

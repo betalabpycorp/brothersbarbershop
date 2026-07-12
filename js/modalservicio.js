@@ -1,8 +1,3 @@
-/* ============================================ */
-/* MODAL PARA SERVICIOS - LÓGICA               */
-/* ============================================ */
-
-// Datos de los servicios
 const servicios = [
     {
         img: "img/corte-clasico.png",
@@ -89,10 +84,6 @@ const servicios = [
         categoria: "Cuidados"
     }
 ];
-
-// ============================================ //
-// MODAL - FUNCIONES                           //
-// ============================================ //
 
 // Elementos del modal
 const modal = document.getElementById('modal-servicios');

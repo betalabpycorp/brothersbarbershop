@@ -1,7 +1,3 @@
-/* ============================================ */
-/* NOTICIAS - THE BROTHERS                      */
-/* ============================================ */
-
 .seccion-noticias {
     max-width: 1200px;
     margin: 0 auto;
@@ -10,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ---------- ENCABEZADO ---------- */
+/*Encabezado*/
 .noticias-encabezado {
     text-align: center;
     margin-bottom: 45px;
@@ -51,14 +47,14 @@
     border-radius: 2px;
 }
 
-/* ---------- GRID DE NOTICIAS ---------- */
+/*Grid de noticias*/
 .noticias-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
 
-/* ---------- TARJETA DE NOTICIA ---------- */
+/*Tarjeta de noticia*/
 .noticia-item {
     display: flex;
     flex-direction: column;
@@ -76,14 +72,12 @@
     box-shadow: 0 8px 25px rgba(201, 166, 107, 0.15);
 }
 
-/* ---------- IMAGEN MEJORADA ---------- */
+/*Imagen de la noticia*/
 .noticia-imagen {
     position: relative;
     overflow: hidden;
     background: #0d0d0d;
-    /* Fondo oscuro por si la imagen no carga */
     padding-top: 65%;
-    /* Relación de aspecto 4:3 (más natural) */
 }
 
 .noticia-imagen img {
@@ -93,9 +87,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Cubre sin deformar */
     object-position: center;
-    /* Centra la imagen */
     display: block;
     transition: transform 0.6s ease, filter 0.6s ease;
 }
@@ -105,7 +97,7 @@
     filter: brightness(1.05);
 }
 
-/* Overlay oscuro en hover */
+/*Overlay oscuro en hover*/
 .noticia-imagen::after {
     content: '';
     position: absolute;
@@ -124,7 +116,7 @@
     opacity: 1;
 }
 
-/* Fecha mejorada */
+/*Fecha de la noticia*/
 .noticia-fecha {
     position: absolute;
     bottom: 15px;
@@ -146,7 +138,7 @@
     box-shadow: 0 6px 20px rgba(201, 166, 107, 0.5);
 }
 
-/* ---------- CONTENIDO ---------- */
+/*Contenido de la noticia*/
 .noticia-contenido {
     padding: 20px;
     display: flex;
@@ -188,8 +180,8 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-top: auto;
-    align-self: flex-start;  
-    width: auto;  
+    align-self: flex-start;
+    width: auto;
 }
 
 .noticia-boton:hover {
@@ -199,10 +191,7 @@
     box-shadow: 0 4px 15px rgba(201, 166, 107, 0.3);
 }
 
-/* ============================================ */
-/* MODAL MEJORADO                              */
-/* ============================================ */
-
+/*Modal*/
 .modal {
     display: none;
     position: fixed;
@@ -302,7 +291,6 @@
     transition: 0.5s ease;
 }
 
-/* Overlay decorativo en modal */
 .modal-imagen::after {
     content: '';
     position: absolute;
@@ -352,31 +340,7 @@
     color: #C9A66B;
 }
 
-/* ============================================ */
-/* MEDIA QUERIES - NOTICIAS THE BROTHERS       */
-/* ============================================ */
-
-/* ===== PANTALLAS MUY GRANDES (4K) ===== */
-@media (min-width: 1920px) {
-    .noticias-grid {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 30px;
-    }
-
-    .noticia-imagen {
-        padding-top: 56.25%;
-    }
-
-    .noticia-titulo {
-        font-size: 20px;
-    }
-
-    .noticia-resumen {
-        font-size: 15px;
-    }
-}
-
-/* ===== PANTALLAS GRANDES (Laptops/Desktop) ===== */
+/*Responsive*/
 @media (max-width: 1200px) {
     .noticias-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -396,7 +360,6 @@
     }
 }
 
-/* ===== PANTALLAS MEDIANAS (Tablets horizontales) ===== */
 @media (max-width: 1024px) {
     .noticias-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -420,7 +383,6 @@
     }
 }
 
-/* ===== PANTALLAS TABLET (Vertical) ===== */
 @media (max-width: 850px) {
     .noticias-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -451,7 +413,6 @@
     }
 }
 
-/* ===== PANTALLAS PEQUEÑAS (Tablets verticales) ===== */
 @media (max-width: 768px) {
     .noticias-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -496,7 +457,6 @@
         left: 12px;
     }
 
-    /* Modal */
     .modal-contenido {
         max-width: 95%;
         max-height: 95vh;
@@ -519,7 +479,6 @@
     }
 }
 
-/* ===== PANTALLAS MÓVILES GRANDES ===== */
 @media (max-width: 600px) {
     .noticias-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -583,7 +542,6 @@
         margin-bottom: 30px;
     }
 
-    /* ===== MODAL MEJORADO EN MÓVIL ===== */
     .modal {
         padding: 8px;
     }
@@ -636,7 +594,6 @@
     }
 }
 
-/* ===== PANTALLAS MUY PEQUEÑAS (Móviles) ===== */
 @media (max-width: 480px) {
     .seccion-noticias {
         padding: 20px 10px;
@@ -706,7 +663,6 @@
         margin-bottom: 25px;
     }
 
-    /* ===== MODAL MEJORADO EN MÓVIL PEQUEÑO ===== */
     .modal {
         padding: 5px;
     }
@@ -760,7 +716,6 @@
     }
 }
 
-/* ===== PANTALLAS MUY PEQUEÑAS (Móviles pequeños) ===== */
 @media (max-width: 380px) {
     .noticias-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -808,7 +763,6 @@
         font-size: 12px;
     }
 
-    /* ===== MODAL MEJORADO EN MÓVIL MUY PEQUEÑO ===== */
     .modal-imagen {
         padding-top: 55%;
     }
@@ -839,7 +793,6 @@
     }
 }
 
-/* ===== PANTALLAS EN ORIENTACIÓN HORIZONTAL (Móviles) ===== */
 @media (max-height: 500px) and (orientation: landscape) {
     .noticias-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -943,12 +896,7 @@
     }
 }
 
-
-/* ============================================ */
-/* FOOTER - RESPONSIVE                         */
-/* ============================================ */
-
-/* ===== TABLETS ===== */
+/*Footer responsive*/
 @media (max-width: 1024px) {
     .parte-superior {
         gap: 25px;
@@ -968,7 +916,6 @@
     }
 }
 
-/* ===== TABLETS VERTICALES ===== */
 @media (max-width: 850px) {
     .parte-superior {
         gap: 20px;
@@ -1001,7 +948,6 @@
     }
 }
 
-/* ===== MÓVILES GRANDES ===== */
 @media (max-width: 768px) {
     .parte-superior {
         display: grid;
@@ -1044,7 +990,6 @@
     }
 }
 
-/* ===== MÓVILES PEQUEÑOS ===== */
 @media (max-width: 480px) {
     .pie-pagina {
         padding: 25px 15px 15px;
@@ -1087,7 +1032,6 @@
     }
 }
 
-/* ===== MÓVILES MUY PEQUEÑOS ===== */
 @media (max-width: 360px) {
     .pie-pagina {
         padding: 20px 10px 10px;
@@ -1121,7 +1065,6 @@
     }
 }
 
-/* ===== LANDSCAPE MÓVIL ===== */
 @media (max-height: 500px) and (orientation: landscape) {
     .parte-superior {
         display: grid;

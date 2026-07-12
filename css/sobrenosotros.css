@@ -289,7 +289,7 @@
     margin: 0;
 }
 
-/*sobre-local*/
+/*Local*/
 .sobre-local {
     margin: 50px 0 45px;
 }
@@ -345,7 +345,7 @@
     background: #0d0d0d;
 }
 
-/* ---------- UBICACIÓN ---------- */
+/*Ubicación*/
 .sobre-ubicacion {
     background: #1a1a1a;
     padding: 35px 30px;
@@ -379,7 +379,7 @@
     margin: 0;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/*Responsive*/
 @media (max-width: 768px) {
     .sobre-titulo {
         font-size: 32px;
@@ -425,11 +425,11 @@
     }
 }
 
-/* ============================================ */
-/* SOBRE NOSOTROS - RESPONSIVE                  */
-/* ============================================ */
+/*============================================*/
+/* SOBRE NOSOTROS - RESPONSIVE                */
+/*============================================*/
 
-/* ===== PANTALLAS MUY GRANDES (4K) ===== */
+/*Pantallas muy grandes (4K)*/
 @media (min-width: 1920px) {
     .sobre-nosotros {
         max-width: 1400px;
@@ -476,7 +476,7 @@
     }
 }
 
-/* ===== PANTALLAS GRANDES (Laptops/Desktop) ===== */
+/*Pantallas grandes (Laptops/Desktop)*/
 @media (max-width: 1200px) {
     .sobre-equipo-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -500,7 +500,7 @@
     }
 }
 
-/* ===== PANTALLAS MEDIANAS (Tablets horizontales) ===== */
+/*Pantallas medianas (Tablets horizontales)*/
 @media (max-width: 1024px) {
     .sobre-equipo-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -542,7 +542,7 @@
     }
 }
 
-/* ===== PANTALLAS TABLET (Vertical) ===== */
+/*Pantallas tablet (vertical)*/
 @media (max-width: 850px) {
     .sobre-nosotros {
         padding: 30px 15px;
@@ -679,7 +679,7 @@
     }
 }
 
-/* ===== PANTALLAS PEQUEÑAS (Tablets verticales) ===== */
+/*Pantallas pequeñas (Tablets verticales)*/
 @media (max-width: 768px) {
     .sobre-titulo {
         font-size: 28px;
@@ -802,7 +802,7 @@
     }
 }
 
-/* ===== PANTALLAS MÓVILES GRANDES ===== */
+/*Pantallas móviles grandes*/
 @media (max-width: 600px) {
     .sobre-nosotros {
         padding: 25px 12px;
@@ -982,7 +982,7 @@
     }
 }
 
-/* ===== PANTALLAS MUY PEQUEÑAS (Móviles) ===== */
+/*Pantallas muy pequeñas (Móviles)*/
 @media (max-width: 480px) {
     .sobre-nosotros {
         padding: 20px 10px;
@@ -1160,7 +1160,7 @@
     }
 }
 
-/* ===== PANTALLAS MUY PEQUEÑAS (Móviles pequeños) ===== */
+/*Pantallas muy pequeñas (Móviles pequeños)*/
 @media (max-width: 360px) {
     .sobre-titulo {
         font-size: 20px;
@@ -1225,7 +1225,7 @@
     }
 }
 
-/* ===== PANTALLAS EN ORIENTACIÓN HORIZONTAL (Móviles) ===== */
+/*Pantallas en orientación horizontal (Móviles)*/
 @media (max-height: 500px) and (orientation: landscape) {
     .sobre-nosotros {
         padding: 20px 15px;

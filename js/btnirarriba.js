@@ -1,13 +1,6 @@
-// ============================================ //
-// MODO CLARO/OSCURO + BOTÓN VOLVER ARRIBA     //
-// ============================================ //
-
 (function() {
     'use strict';
 
-    // ============================================ //
-    // 1. CREAR BOTÓN DE MODO CLARO/OSCURO        //
-    // ============================================ //
 
     let botonModo = document.getElementById('btnModo');
 
@@ -23,9 +16,6 @@
     const icono = botonModo.querySelector('i');
     const cuerpo = document.body;
 
-    // ============================================ //
-    // 2. FUNCIONES DEL MODO CLARO/OSCURO         //
-    // ============================================ //
 
     function cambiarModo(modo) {
         if (modo === 'claro') {
@@ -36,6 +26,8 @@
             }
             localStorage.setItem('modo', 'claro');
             botonModo.setAttribute('aria-label', 'Cambiar a modo oscuro');
+            // Cambiar logo a versión clara
+            cambiarLogo('img/logobarberclaro.png');
         } else {
             cuerpo.classList.add('modo-oscuro');
             cuerpo.classList.remove('modo-claro');
@@ -44,6 +36,8 @@
             }
             localStorage.setItem('modo', 'oscuro');
             botonModo.setAttribute('aria-label', 'Cambiar a modo claro');
+            // Cambiar logo a versión oscura
+            cambiarLogo('img/logobarber.png');
         }
     }
 
@@ -70,9 +64,17 @@
         }
     }
 
-    // ============================================ //
-    // 3. EVENTOS DEL MODO CLARO/OSCURO           //
-    // ============================================ //
+    function cambiarLogo(ruta) {
+        const logos = document.querySelectorAll('.logo');
+        logos.forEach(function(logo) {
+            // Mantener las mismas propiedades que el logo original
+            logo.src = ruta;
+            logo.alt = 'The Brothers';
+            // Si el logo tiene clases adicionales, se mantienen
+            // Solo cambiamos el src
+        });
+    }
+
 
     if (botonModo) {
         botonModo.addEventListener('click', alternarModo);
@@ -81,11 +83,6 @@
     cargarModoGuardado();
 
     console.log('✅ Modo claro/oscuro inicializado');
-
-
-    // ============================================ //
-    // 4. CREAR BOTÓN VOLVER ARRIBA                //
-    // ============================================ //
 
     let botonSubir = document.getElementById('btnSubir');
 
@@ -98,10 +95,7 @@
         document.body.appendChild(botonSubir);
     }
 
-    // ============================================ //
-    // 5. FUNCIONES DEL BOTÓN VOLVER ARRIBA       //
-    // ============================================ //
-
+// Botón Arriba
     if (botonSubir) {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 1000) {
@@ -123,10 +117,7 @@
 
 })();
 
-
-// ============================================ //
-// MODO CLARO/OSCURO - ESTILOS COMPLETOS       //
-// ============================================ //
+// Modo calro oscuro
 
 const estilos = document.createElement('style');
 estilos.textContent = `
@@ -192,9 +183,6 @@ estilos.textContent = `
         visibility: visible;
     }
 
-    /* ============================================ */
-    /* MODO CLARO - TODOS LOS ELEMENTOS            */
-    /* ============================================ */
 
     body.modo-claro {
         background-color: #f5f0eb;
@@ -593,9 +581,198 @@ estilos.textContent = `
         color: #777777;
     }
 
-    /* ============================================ */
-    /* MENÚ HAMBURGUESA - MODO CLARO               */
-    /* ============================================ */
+    body.modo-claro .politica-privacidad {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .politica-privacidad * {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .politica-privacidad h1 {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .politica-privacidad h2 {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .politica-privacidad p {
+        color: #555555;
+    }
+
+    body.modo-claro .politica-privacidad .seccion {
+        background: #ffffff;
+        border-color: #ddd;
+    }
+
+    body.modo-claro .politica-privacidad .seccion * {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .politica-privacidad .seccion p {
+        color: #555555;
+    }
+
+    body.modo-claro .politica-privacidad .seccion ul {
+        color: #555555;
+    }
+
+    body.modo-claro .politica-privacidad .seccion ul li {
+        color: #555555;
+    }
+
+    body.modo-claro .politica-privacidad .seccion ul li strong {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .politica-privacidad .seccion .destacado {
+        color: #C9A66B;
+    }
+
+    body.modo-claro .politica-privacidad .fecha {
+        color: #777777;
+    }
+
+    body.modo-claro .politica-privacidad .volver {
+        background-color: #C9A66B;
+        color: #000000;
+    }
+
+    body.modo-claro .politica-privacidad .volver:hover {
+        background-color: #b8924f;
+    }
+
+    body.modo-claro .politica-privacidad .footer-politica {
+        color: #777777;
+        border-top-color: #ddd;
+    }
+
+    /*Modo claro*/
+
+    body.modo-claro .desarrollador {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .desarrollador * {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .desarrollador h1 {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .desarrollador .subtitulo {
+        color: #555555;
+    }
+
+    body.modo-claro .desarrollador .dev-card {
+        background: #ffffff;
+        border-color: #ddd;
+    }
+
+    body.modo-claro .desarrollador .dev-card * {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .desarrollador .dev-card h3 {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .desarrollador .dev-card .dev-rol {
+        background: #C9A66B;
+        color: #000000;
+    }
+
+    body.modo-claro .desarrollador .dev-card .dev-desc {
+        color: #555555;
+    }
+
+    body.modo-claro .desarrollador .dev-redes a {
+        color: #C9A66B;
+        border-color: #C9A66B;
+    }
+
+    body.modo-claro .desarrollador .dev-redes a:hover {
+        background: #C9A66B;
+        color: #000000;
+    }
+
+    body.modo-claro .desarrollador .tecnologias {
+        background: #ffffff;
+        border-color: #ddd;
+    }
+
+    body.modo-claro .desarrollador .tecnologias h2 {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .desarrollador .tech-item {
+        background: #f5f0eb;
+        color: #2d2a27;
+        border-color: #ddd;
+    }
+
+    body.modo-claro .desarrollador .tech-item:hover {
+        border-color: #C9A66B;
+        color: #C9A66B;
+    }
+
+    body.modo-claro .desarrollador .volver {
+        background-color: #C9A66B;
+        color: #000000;
+    }
+
+    body.modo-claro .desarrollador .volver:hover {
+        background-color: #b8924f;
+    }
+
+    body.modo-claro .desarrollador .footer-dev {
+        color: #777777;
+        border-top-color: #ddd;
+    }
+
+    body.modo-claro .desarrollador .footer-dev strong {
+        color: #2d2a27;
+    }
+
+
+    body.modo-claro .noticias-encabezado h2 {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .noticias-encabezado .noticias-titulo-principal {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .noticias-encabezado .noticias-subtitulo {
+        color: #555555 !important;
+    }
+
+    body.modo-claro .noticias-encabezado .noticias-etiqueta {
+        color: #C9A66B !important;
+        background: rgba(0, 0, 0, 0.05) !important;
+        border-color: #C9A66B !important;
+    }
+
+    body.modo-claro .sobre-encabezado h1 {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .sobre-encabezado .sobre-titulo {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .sobre-encabezado .sobre-subtitulo {
+        color: #555555 !important;
+    }
+
+    body.modo-claro .sobre-encabezado .sobre-etiqueta {
+        color: #C9A66B !important;
+        background: rgba(0, 0, 0, 0.05) !important;
+        border-color: #C9A66B !important;
+    }
+
 
     body.modo-claro .nav-links {
         background: #f5f0eb !important;
@@ -617,10 +794,6 @@ estilos.textContent = `
     body.modo-claro .overlay-menu {
         background: rgba(0, 0, 0, 0.5) !important;
     }
-
-    /* ============================================ */
-    /* RESPONSIVE                                  */
-    /* ============================================ */
 
     @media (max-width: 768px) {
         .btn-modo {

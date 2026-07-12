@@ -1,4 +1,3 @@
-
 .contenedor-formulario {
     display: flex;
     flex-direction: column;
@@ -84,13 +83,13 @@
 }
 
 /*Mapa*/
-.contenedor-mapa{
+.contenedor-mapa {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.caja-mapa{
+.caja-mapa {
     flex-direction: column;
     width: 500px;
     padding: 20px;
@@ -100,10 +99,11 @@
     justify-content: center;
 }
 
-.caja-mapa h1{
+.caja-mapa h1 {
     color: white;
 }
 
+/*Responsive*/
 @media (min-width: 1920px) {
     .contenedor-formulario {
         padding: 60px 40px;
@@ -146,7 +146,6 @@
     }
 }
 
-/*(Laptops/Desktop)*/
 @media (max-width: 1200px) {
     .contenedor-formulario {
         padding: 35px 20px;
@@ -198,7 +197,6 @@
     }
 }
 
-/*Pantallas tablet*/
 @media (max-width: 850px) {
     .contenedor-formulario {
         padding: 25px 15px;
@@ -254,7 +252,6 @@
     }
 }
 
-/*Pantallas pequeñas*/
 @media (max-width: 768px) {
     .contenedor-formulario {
         padding: 20px 12px;
@@ -318,7 +315,6 @@
     }
 }
 
-/*Pantallas moviles*/
 @media (max-width: 600px) {
     .contenedor-formulario {
         padding: 15px 10px;
@@ -382,7 +378,6 @@
     }
 }
 
-/*Pantallas muy pequeñas*/
 @media (max-width: 480px) {
     .contenedor-formulario {
         padding: 12px 8px;
@@ -443,7 +438,6 @@
         margin-bottom: 8px;
     }
 }
-
 
 @media (max-width: 360px) {
     .contenedor-formulario {
@@ -535,7 +529,7 @@
     }
 }
 
-/* Mensaje de estado del formulario */
+/*Mensaje de estado del formulario*/
 #mensajeEstado {
     display: none;
     padding: 15px;
@@ -545,4 +539,3 @@
     font-weight: 600;
     animation: fadeIn 0.5s ease;
 }
-

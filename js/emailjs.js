@@ -1,13 +1,9 @@
-// ============================================ //
-// EMAILJS - FORMULARIO DE CONTACTO            //
-// ============================================ //
-
 console.log('✅ contacto.js cargado correctamente');
 
 // Inicializar EmailJS
 emailjs.init('ciXVeLi9VAySlSGT6');
 
-// ========== FUNCIÓN GLOBAL PARA ENVIAR ==========
+// Enviar
 window.enviarFormulario = function() {
     console.log('✅ Botón clickeado - Iniciando envío...');
 
@@ -27,7 +23,7 @@ window.enviarFormulario = function() {
 
     console.log('📝 Datos:', { nombre, apellido, email, telefono, asunto, tipoConsulta, mensaje });
 
-    // ========== VALIDACIÓN DE CAMPOS CON RETURN ==========
+    // Validación
 
     if (!nombre) {
         mostrarMensaje('⚠️ <strong>Complete este campo</strong> - Por favor, ingresá tu nombre.', 'error');
@@ -135,7 +131,7 @@ window.enviarFormulario = function() {
         });
 }
 
-// ========== FUNCIÓN PARA MOSTRAR MENSAJES ==========
+// FUNCIÓN PARA MOSTRAR MENSAJES 
 function mostrarMensaje(texto, tipo) {
     const mensajeEstado = document.getElementById('mensajeEstado');
     
@@ -176,7 +172,7 @@ function mostrarMensaje(texto, tipo) {
     }
 }
 
-// ========== LIMPIAR BORDE ROJO AL ESCRIBIR ==========
+// Limpiar borde rojo al escribir
 document.querySelectorAll('.campo input, .campo select, .campo textarea').forEach(function(el) {
     el.addEventListener('input', function() {
         this.style.borderColor = '#333';

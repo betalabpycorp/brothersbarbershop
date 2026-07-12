@@ -1,8 +1,8 @@
-// ============ EMAILJS ============
+//  EMAILJS 
 // Inicializar EmailJS (reemplazá con tu User ID)
 emailjs.init('TU_USER_ID');
 
-// ============ VALIDACIONES DEL FORMULARIO ============
+// VALIDACIONES DEL FORMULARIO
 document.getElementById('formulario').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -69,7 +69,7 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
         btn.textContent = 'Enviando...';
         btn.disabled = true;
 
-        // ============ ENVIAR CON EMAILJS ============
+        // ENVIAR CON EMAILJS
         const templateParams = {
             nombre: nombre.value,
             apellido: apellido.value,

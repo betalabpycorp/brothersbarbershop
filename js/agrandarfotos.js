@@ -1,12 +1,6 @@
-// ============================================ //
-// MODAL PARA GALERÍA - SOLO EVENTOS           //
-// ============================================ //
+
 
 document.addEventListener('DOMContentLoaded', function() {
-
-    // ============================================ //
-    // ELEMENTOS DEL MODAL                         //
-    // ============================================ //
 
     const modalGaleria = document.getElementById('modalGaleria');
     const modalGaleriaCerrar = document.getElementById('modalGaleriaCerrar');
@@ -26,10 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
-    // ============================================ //
-    // FUNCIONES DEL MODAL                         //
-    // ============================================ //
-
     function abrirModalGaleria(src) {
         modalGaleriaImg.src = src;
         modalGaleria.style.display = 'flex';
@@ -40,10 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         modalGaleria.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
-
-    // ============================================ //
-    // EVENTOS DEL MODAL                           //
-    // ============================================ //
 
     modalGaleriaCerrar.addEventListener('click', cerrarModalGaleria);
 
@@ -58,10 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
             cerrarModalGaleria();
         }
     });
-
-    // ============================================ //
-    // ASIGNAR EVENTO A TODAS LAS FOTOS            //
-    // ============================================ //
 
     // Esperar un poco para que las imágenes estén cargadas
     setTimeout(function() {

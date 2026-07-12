@@ -49,36 +49,6 @@ hr {
     border-radius: 150px;
 }
 
-/*Header*/
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-     position: fixed;      
-    top: 0;                
-    left: 0;                
-    width: 100%;           
-    z-index: 1000;         
-    background: #000000;
-    height: 50px;
-}
-
-header a{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    padding: 5px;
-}
-
-header a:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
-    background-color: rgb(39, 17, 2);
-    color: white;
-}
-
 /*Banner*/
 .banner{
     display: flex;
@@ -179,6 +149,13 @@ header a:hover{
     display: block;
     text-align: left;
     border-radius: 20px;
+}
+
+.contenido .logo{
+    object-fit: contain;
+    display: block;
+    border-radius: 80px;
+    margin: 0 auto 10px auto;
 }
 
 .contenido:hover {
@@ -475,11 +452,6 @@ header a:hover{
 }
 
 /*Responsive*/
-/* ============================================ */
-/* MEDIA QUERIES - RESPONSIVE COMPLETO         */
-/* ============================================ */
-
-/* ===== PANTALLAS MUY GRANDES (4K) ===== */
 @media (min-width: 1920px) {
     .seccion-noticias,
     .presentacion,
@@ -1410,13 +1382,6 @@ header a:hover{
     }
 }
 
-
-
-/* ============================================ */
-/* HEADER CON HAMBURGUESA - COMPLETO           */
-/* ============================================ */
-
-/* === PADDING PARA TODOS LOS DISPOSITIVOS === */
 body {
     padding-top: 80px;
     margin: 0;
@@ -1454,8 +1419,6 @@ header {
     width: 150px;
     height: auto;
     flex-shrink: 0;
-    order: 1;
-    margin-right: auto;
 }
 
 .nav-links {
@@ -1465,7 +1428,6 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
-    order: 2;
 }
 
 .nav-links a {
@@ -1492,7 +1454,6 @@ header {
     cursor: pointer;
     padding: 8px;
     z-index: 1001;
-    order: 3;
 }
 
 .boton-hamburguesa span {
@@ -1531,10 +1492,10 @@ header {
     display: block;
 }
 
-/* ===== RESPONSIVE - MÓVILES ===== */
+/* ===== RESPONSIVE HEADER ===== */
 @media (max-width: 768px) {
     body {
-        padding-top: 80px !important;  /* Forzamos el mismo padding en móvil */
+        padding-top: 70px !important;
     }
 
     header {
@@ -1543,22 +1504,39 @@ header {
     }
 
     .header-contenido {
-        justify-content: space-between;
+        justify-content: center;
         gap: 0;
+        position: relative;
+        width: 100%;
     }
 
     .logo {
         width: 80px;
-        order: 1;
-        margin-right: 0;
+        margin: 0 auto;
+        display: block;
     }
 
     .boton-hamburguesa {
         display: flex;
-        order: 2;
-        position: relative;
-        margin-left: auto;
-        margin-right: 30px;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1001;
+        padding: 8px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .boton-hamburguesa span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: #ffffff;
+        border-radius: 3px;
+        margin: 5px 0;
+        transition: 0.3s ease;
     }
 
     .nav-links {
@@ -1578,7 +1556,6 @@ header {
         transition: right 0.4s ease;
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
         z-index: 999;
-        order: 3;
     }
 
     .nav-links.abierto {
@@ -1595,7 +1572,7 @@ header {
 
 @media (max-width: 480px) {
     body {
-        padding-top: 70px !important;
+        padding-top: 65px !important;
     }
 
     header {
@@ -1608,12 +1585,13 @@ header {
     }
 
     .boton-hamburguesa {
-        margin-right: 25px;
+        right: 12px;
     }
 
     .boton-hamburguesa span {
         width: 24px;
         height: 2.5px;
+        margin:  0;
     }
 
     .nav-links {
@@ -1644,12 +1622,13 @@ header {
     }
 
     .boton-hamburguesa {
-        margin-right: 20px;
+        right: 10px;
     }
 
     .boton-hamburguesa span {
         width: 20px;
         height: 2px;
+        margin: 3px 0;
     }
 
     .nav-links {
@@ -1662,122 +1641,6 @@ header {
         padding: 6px 12px;
     }
 }
-
-
-/* ===== MÓVILES ===== */
-@media (max-width: 480px) {
-    .modal-servicios {
-        padding: 5px;
-        align-items: flex-start;
-        padding-top: 10px;
-    }
-
-    .modal-servicios-contenido {
-        width: 100%;
-        max-width: 100%;
-        border-radius: 10px;
-        max-height: 95vh;
-        margin: 0 auto;
-        overflow-y: auto;
-    }
-
-    .modal-detalle-img {
-        height: 160px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
-    }
-
-    .modal-detalle-info {
-        padding: 12px 14px 16px;
-    }
-
-    .modal-detalle-info h2 {
-        font-size: 18px;
-        margin-bottom: 6px;
-    }
-
-    .modal-detalle-desc {
-        font-size: 13px;
-        line-height: 1.5;
-        margin-bottom: 10px;
-    }
-
-    .modal-detalle-info p {
-        font-size: 13px;
-        margin: 4px 0;
-    }
-
-    .modal-detalle-label {
-        font-size: 13px;
-    }
-
-    .modal-servicios-cerrar {
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
-        top: 6px;
-        right: 8px;
-        background: rgba(0, 0, 0, 0.8);
-        position: sticky;
-        float: right;
-        margin: 6px 6px 0 0;
-    }
-}
-
-/* ===== MÓVILES MUY PEQUEÑOS ===== */
-@media (max-width: 380px) {
-    .modal-servicios {
-        padding: 3px;
-        padding-top: 5px;
-    }
-
-    .modal-servicios-contenido {
-        max-height: 98vh;
-        border-radius: 8px;
-    }
-
-    .modal-detalle-img {
-        height: 130px;
-    }
-
-    .modal-detalle-info {
-        padding: 10px 12px 14px;
-    }
-
-    .modal-detalle-info h2 {
-        font-size: 16px;
-        margin-bottom: 4px;
-    }
-
-    .modal-detalle-desc {
-        font-size: 12px;
-        line-height: 1.4;
-        margin-bottom: 8px;
-    }
-
-    .modal-detalle-info p {
-        font-size: 12px;
-        margin: 3px 0;
-    }
-
-    .modal-detalle-label {
-        font-size: 12px;
-    }
-
-    .modal-servicios-cerrar {
-        width: 26px;
-        height: 26px;
-        font-size: 17px;
-        top: 4px;
-        right: 6px;
-    }
-}
-
-/* ============================================ */
-/* MODAL - CENTRADO EN MEDIO DE LA PANTALLA    */
-/* ============================================ */
-
 .modal-servicios {
     display: none;
     position: fixed;
@@ -1871,10 +1734,6 @@ header {
     font-size: 14px;
     margin: 4px 0;
 }
-
-/* ============================================ */
-/* MÓVILES                                      */
-/* ============================================ */
 
 @media (max-width: 600px) {
     .modal-servicios {
@@ -2033,9 +1892,6 @@ header {
         right: 8px;
     }
 }
-/* ============================================ */
-/* MODAL - CENTRADO EN MEDIO DE LA PANTALLA    */
-/* ============================================ */
 
 .modal-servicios {
     display: none;
@@ -2135,10 +1991,6 @@ header {
     margin: 4px 0;
 }
 
-/* ============================================ */
-/* MÓVILES                                      */
-/* ============================================ */
-
 @media (max-width: 600px) {
     .modal-servicios {
         padding: 15px;
@@ -2296,9 +2148,6 @@ header {
         right: 8px;
     }
 }
-/* ============================================ */
-/* MODAL PARA GALERÍA - CENTRADO               */
-/* ============================================ */
 
 .modal-galeria {
     display: none;
@@ -2354,10 +2203,6 @@ header {
     color: #000;
     transform: rotate(90deg);
 }
-
-/* ============================================ */
-/* TABLETS Y MÓVILES - CENTRADO FORZADO        */
-/* ============================================ */
 
 @media (max-width: 1024px) {
     .modal-galeria {
@@ -2448,9 +2293,6 @@ header {
     }
 }
 
-/* ============================================ */
-/* LANDSCAPE                                    */
-/* ============================================ */
 
 @media (max-height: 500px) and (orientation: landscape) {
     .modal-galeria {

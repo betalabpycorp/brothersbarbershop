@@ -6,34 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reseñas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
     <!--Banner-->
     <header>
-    <div class="header-contenido">
-        <img class="logo" src="img/logobarber.png" alt="The Brothers" />
-        
-        <!-- Botón hamburguesa (solo visible en móviles) -->
-        <button class="boton-hamburguesa" id="botonHamburguesa">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <div class="header-contenido">
+            <img class="logo" src="img/logobarber.png" alt="The Brothers" />
+            <button class="boton-hamburguesa" id="botonHamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <nav class="nav-links" id="navLinks">
-            <a href="servicios.html">Servicios</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contactos.html">Contactos</a>
-            <a href="nosotros.html">Sobre Nosotros</a>
-            <a href="noticias.html">Noticias</a>
-        </nav>
-    </div>
-</header>
+            <nav class="nav-links" id="navLinks">
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contactos.html">Contactos</a>
+                <a href="nosotros.html">Sobre Nosotros</a>
+                <a href="noticias.html">Noticias</a>
+            </nav>
+        </div>
+    </header>
 
-<!-- Overlay para cerrar el menú al hacer clic fuera -->
-<div class="overlay-menu" id="overlayMenu"></div>
+    <!-- Overlay para cerrar el menú al hacer clic fuera -->
+    <div class="overlay-menu" id="overlayMenu"></div>
 
 
 
@@ -52,7 +51,7 @@
     <!--Presentación-->
     <div class="presentacion">
         <div>
-            <h4 class="textpresen">The Brothers Barbería es un espacio dedicado al arte del cuidado masculino
+            <h4 class="textpresen">The Brothers Barbershop es un espacio dedicado al arte del cuidado masculino
                 en el corazón de Itauguá. Somos dos hermanos apasionados por la barbería que
                 convertimos un sueño en realidad, ofreciendo cortes de pelo, arreglo de barba y
                 servicios de afeitado con la calidad y calidez que nos caracteriza.</h4>
@@ -83,7 +82,7 @@
 
     <!--Preguntas-->
     <section class="faq" id="faq">
-        <h2 class="titulo-faq"> Preguntas Frecuentes</h2>
+        <h1 class="titulos">Preguntas Frecuentes</h1>
         <p class="subtitulo-faq">Resolvemos tus dudas antes de tu visita</p>
 
         <div class="faq-container" id="faq-container">
@@ -92,81 +91,92 @@
         <button onclick="irNovedades" class="ver-mas">Novedades y promociones</button>
     </section>
 
+    <hr>
+
+    <!--Reseñas-->
+    <div class="reseñas-encabezado">
+        <h1 class="titulos">Lo que dicen nuestros clientes</h1>
+        <div class="reseñas-linea"></div>
+    </div>
+
+    <div class="reseñas-grid" id="reseñas">
+        <!-- Las reseñas se generan con JavaScript -->
+    </div>
     <!--Información y redes-->
-<footer class="pie-pagina">
-    <!-- Parte superior -->
-    <div class="parte-superior">
-        <!--Columna 1-->
-        <div class="columna">
-            <h4>Enlaces</h4>
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="galeria.html">Galería</a>
-            <a href="#faq">Preguntas</a>
-            <a href="contactos.html">Contacto</a>
-            <a href="politica.html">Politica de privacidad</a>
-            <a href="desarrolladores.html">Desarrolladores</a>
-        </div>
-
-        <!--Columna 2-->
-        <div class="columna">
-            <h4>Horarios</h4>
-            <p>Lun a Sab 8:00 - 20:00</p>
-            <p>Dom 9:00 - 14:00</p>
-        </div>
-
-        <!--Columna 3-->
-        <div class="columna">
-            <h4>Contacto</h4>
-            <p>📍 Itauguá, Paraguay</p>
-            <p>📞 (0981) 123-456</p>
-            <p>✉️ info@thebrothers.com</p>
-        </div>
-
-        <!--Columna 4-->
-        <div class="columna">
-            <h4>Redes Sociales</h4>
-            <div class="redes-sociales">
-                <a href="https://www.instagram.com/">Instagram</a>
-                <a href="https://www.facebook.com/">Facebook</a>
-                <a href="https://web.whatsapp.com/">WhatsApp</a>
+    <footer class="pie-pagina">
+        <!-- Parte superior -->
+        <div class="parte-superior">
+            <!--Columna 1-->
+            <div class="columna">
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="#faq">Preguntas</a>
+                <a href="contactos.html">Contacto</a>
+                <a href="politica.html">Politica de privacidad</a>
+                <a href="desarrolladores.html">Desarrolladores</a>
             </div>
-        </div>
-    </div>
 
-    <div class="parte-inferior">
-        <p>© 2021 The Brothers Barbershop - Itauguá, Paraguay</p>
-    </div>
-</footer>
+            <!--Columna 2-->
+            <div class="columna">
+                <h4>Horarios</h4>
+                <p>Lun a Sab 8:00 - 20:00</p>
+                <p>Dom 9:00 - 14:00</p>
+            </div>
 
+            <!--Columna 3-->
+            <div class="columna">
+                <h4>Contacto</h4>
+                <p>📍 Itauguá, Paraguay</p>
+                <p>📞 (0981) 123-456</p>
+                <p>✉️ info@thebrothers.com</p>
+            </div>
 
-<!--Modal servicios-->
-<div class="modal-servicios" id="modal-servicios">
-    <div class="modal-servicios-contenido" id="modal-servicios-contenido">
-        
-        <!-- Botón cerrar -->
-        <button class="modal-servicios-cerrar" id="modalCerrar">✕</button>
-
-        <!-- Contenido del modal (se llena con JavaScript) -->
-        <div id="modalBody">
-            <img id="modalImg" src="" alt="" class="modal-detalle-img">
-            <div class="modal-detalle-info">
-                <h2 id="modalTitulo"></h2>
-                <p class="modal-detalle-desc" id="modalDescri"></p>
-                <p><span class="modal-detalle-label">Categoría:</span> <span id="modalCategoria"></span></p>
-                <p><span class="modal-detalle-label">Precio:</span> <span id="modalPrecio"></span></p>
+            <!--Columna 4-->
+            <div class="columna">
+                <h4>Redes Sociales</h4>
+                <div class="redes-sociales">
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://web.whatsapp.com/">WhatsApp</a>
+                </div>
             </div>
         </div>
 
-    </div>
-</div>
+        <div class="parte-inferior">
+            <p>© 2021 The Brothers Barbershop - Itauguá, Paraguay</p>
+        </div>
+    </footer>
 
-<div class="modal-galeria" id="modalGaleria">
-    <div class="modal-galeria-contenido">
-        <button class="modal-galeria-cerrar" id="modalGaleriaCerrar">✕</button>
-        <img id="modalGaleriaImg" src="" alt="Imagen ampliada">
+
+    <!--Modal servicios-->
+    <div class="modal-servicios" id="modal-servicios">
+        <div class="modal-servicios-contenido" id="modal-servicios-contenido">
+
+            <!-- Botón cerrar -->
+            <button class="modal-servicios-cerrar" id="modalCerrar">✕</button>
+
+            <!-- Contenido del modal (se llena con JavaScript) -->
+            <div id="modalBody">
+                <img id="modalImg" src="" alt="" class="modal-detalle-img">
+                <div class="modal-detalle-info">
+                    <h2 id="modalTitulo"></h2>
+                    <p class="modal-detalle-desc" id="modalDescri"></p>
+                    <p><span class="modal-detalle-label">Categoría:</span> <span id="modalCategoria"></span></p>
+                    <p><span class="modal-detalle-label">Precio:</span> <span id="modalPrecio"></span></p>
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
+
+    <div class="modal-galeria" id="modalGaleria">
+        <div class="modal-galeria-contenido">
+            <button class="modal-galeria-cerrar" id="modalGaleriaCerrar">✕</button>
+            <img id="modalGaleriaImg" src="" alt="Imagen ampliada">
+        </div>
+    </div>
 
 
     <!--Botón volver arriba-->
@@ -182,6 +192,7 @@
     <script src="js/btnhamburguesa.js"></script>
     <script src="js/agrandarfotos.js"></script>
     <script src="js/direcciones.js"></script>
+    <script src="js/reseñas.js"></script>
 </body>
 
 </html>
