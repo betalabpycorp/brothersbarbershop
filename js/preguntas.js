@@ -21,7 +21,7 @@ const preguntasFaq = [
     },
     {
         pregunta: "¿Dónde están ubicados?",
-        respuesta: "Estamos en <strong>calle Mariscal Estigarribia, Itauguá</strong>, frente a la plaza principal."
+        respuesta: "Estamos en la<strong>Calle Coronel Martinez esq. 14 de mayo. Itauguá</strong>."
     },
     {
         pregunta: "¿Cuánto tiempo dura un corte de cabello?",

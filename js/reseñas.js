@@ -22,22 +22,6 @@ const reseñas = [
         texto: "Muy buena experiencia. El barbero supo exactamente lo que quería y el resultado fue espectacular.",
         estrellas: 5,
         fecha: "10/07/2026"
-    },
-    {
-        id: 4,
-        nombre: "Ana Martínez",
-        avatar: "AM",
-        texto: "Llevé a mi hijo y quedó encantado. Son muy pacientes con los niños y el corte quedó perfecto.",
-        estrellas: 5,
-        fecha: "08/07/2026"
-    },
-    {
-        id: 5,
-        nombre: "Pedro Ramírez",
-        avatar: "PR",
-        texto: "Hacía tiempo que no encontraba una barbería con tanto estilo y profesionalismo. Mi nuevo lugar favorito.",
-        estrellas: 5,
-        fecha: "05/07/2026"
     }
 ];
 

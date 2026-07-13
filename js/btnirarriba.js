@@ -1,3 +1,7 @@
+// ============================================ //
+// MODO OSCURO/CLARO + BOTÓN VOLVER ARRIBA     //
+// ============================================ //
+
 (function() {
     'use strict';
 
@@ -73,7 +77,7 @@
 
     cargarModoGuardado();
 
-    console.log('✅ Modo claro/oscuro inicializado');
+    console.log('Modo claro/oscuro inicializado');
 
     let botonSubir = document.getElementById('btnSubir');
 
@@ -103,10 +107,9 @@
         });
     }
 
-    console.log('✅ Botón volver arriba inicializado');
+    console.log('Botón volver arriba inicializado');
 
 })();
-// Modo claro oscuro
 
 const estilos = document.createElement('style');
 estilos.textContent = `
@@ -172,7 +175,6 @@ estilos.textContent = `
         visibility: visible;
     }
 
-
     body.modo-claro {
         background-color: #f5f0eb;
         color: #2d2a27;
@@ -203,6 +205,70 @@ estilos.textContent = `
         color: #C9A66B;
     }
 
+    body.modo-claro header {
+        background: #f5f0eb;
+        border-bottom-color: #C9A66B;
+    }
+
+    body.modo-claro header * {
+        color: #2d2a27;
+    }
+
+    body.modo-claro header a {
+        color: #2d2a27;
+    }
+
+    body.modo-claro header a:hover {
+        background-color: #e8e0d8;
+        color: #2d2a27;
+    }
+
+    body.modo-claro .boton-hamburguesa span {
+        background: #2d2a27;
+    }
+
+    body.modo-claro .nav-links {
+        background: #f5f0eb !important;
+    }
+
+    body.modo-claro .nav-links a {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .nav-links a:hover {
+        background-color: #e8e0d8 !important;
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .nav-links.abierto {
+        background: #f5f0eb !important;
+    }
+
+    body.modo-claro .overlay-menu {
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    body.modo-claro .banner h1,
+    body.modo-claro .banner h4 {
+        color: #ffffff;
+    }
+
+    body.modo-claro .textpresen h4 {
+        color: #2d2a27;
+    }
+
+    body.modo-claro .titulos {
+        color: #b8924f;
+    }
+
+    body.modo-claro .noticias-titulo-principal {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .sobre-titulo {
+        color: #2d2a27 !important;
+    }
+
     body.modo-claro .contenido {
         background-color: #ffffff;
         color: #2d2a27;
@@ -214,6 +280,23 @@ estilos.textContent = `
 
     body.modo-claro .contenido * {
         color: #2d2a27;
+    }
+
+    body.modo-claro .sp-categoria {
+        color: #e74c3c;
+    }
+
+    body.modo-claro .sp-precio {
+        color: #27ae60;
+    }
+
+    body.modo-claro .ver-mas {
+        background-color: #C9A66B;
+        color: #000000;
+    }
+
+    body.modo-claro .ver-mas:hover {
+        background-color: #b8924f;
     }
 
     body.modo-claro .formulario {
@@ -327,6 +410,52 @@ estilos.textContent = `
         color: #2d2a27;
     }
 
+    body.modo-claro .modal-servicios {
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    body.modo-claro .modal-galeria {
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    body.modo-claro .modal-servicios-cerrar {
+        background: rgba(0, 0, 0, 0.1);
+        color: #2d2a27;
+    }
+
+    body.modo-claro .modal-servicios-cerrar:hover {
+        background: #C9A66B;
+        color: #000000;
+    }
+
+    body.modo-claro .modal-galeria-cerrar {
+        background: rgba(0, 0, 0, 0.1);
+        color: #2d2a27;
+    }
+
+    body.modo-claro .modal-galeria-cerrar:hover {
+        background: #C9A66B;
+        color: #000000;
+    }
+
+    body.modo-claro .btn-subir {
+        background-color: #C9A66B;
+        color: #000000;
+    }
+
+    body.modo-claro .btn-subir:hover {
+        background-color: #b8924f;
+    }
+
+    body.modo-claro .btn-modo {
+        background: #C9A66B;
+        color: #000000;
+    }
+
+    body.modo-claro .btn-modo:hover {
+        background: #b8924f;
+    }
+
     body.modo-claro .seccion-noticias {
         color: #2d2a27;
     }
@@ -358,104 +487,6 @@ estilos.textContent = `
     }
 
     body.modo-claro .noticia-boton:hover {
-        background: #C9A66B;
-        color: #000000;
-    }
-
-    body.modo-claro .modal-servicios {
-        background: rgba(255, 255, 255, 0.95);
-    }
-
-    body.modo-claro .modal-galeria {
-        background: rgba(255, 255, 255, 0.95);
-    }
-
-    body.modo-claro header {
-        background: #f5f0eb;
-        border-bottom-color: #C9A66B;
-    }
-
-    body.modo-claro header * {
-        color: #2d2a27;
-    }
-
-    body.modo-claro header a {
-        color: #2d2a27;
-    }
-
-    body.modo-claro header a:hover {
-        background-color: #e8e0d8;
-        color: #2d2a27;
-    }
-
-    body.modo-claro .boton-hamburguesa span {
-        background: #2d2a27;
-    }
-
-    body.modo-claro .banner h1,
-    body.modo-claro .banner h4 {
-        color: #ffffff;
-    }
-
-    body.modo-claro .textpresen h4 {
-        color: #2d2a27;
-    }
-
-    body.modo-claro .titulos {
-        color: #C9A66B;
-    }
-
-    body.modo-claro .sp-categoria {
-        color: #e74c3c;
-    }
-
-    body.modo-claro .sp-precio {
-        color: #27ae60;
-    }
-
-    body.modo-claro .ver-mas {
-        background-color: #C9A66B;
-        color: #000000;
-    }
-
-    body.modo-claro .ver-mas:hover {
-        background-color: #b8924f;
-    }
-
-    body.modo-claro .btn-subir {
-        background-color: #C9A66B;
-        color: #000000;
-    }
-
-    body.modo-claro .btn-subir:hover {
-        background-color: #b8924f;
-    }
-
-    body.modo-claro .btn-modo {
-        background: #C9A66B;
-        color: #000000;
-    }
-
-    body.modo-claro .btn-modo:hover {
-        background: #b8924f;
-    }
-
-    body.modo-claro .modal-servicios-cerrar {
-        background: rgba(0, 0, 0, 0.1);
-        color: #2d2a27;
-    }
-
-    body.modo-claro .modal-servicios-cerrar:hover {
-        background: #C9A66B;
-        color: #000000;
-    }
-
-    body.modo-claro .modal-galeria-cerrar {
-        background: rgba(0, 0, 0, 0.1);
-        color: #2d2a27;
-    }
-
-    body.modo-claro .modal-galeria-cerrar:hover {
         background: #C9A66B;
         color: #000000;
     }
@@ -570,6 +601,42 @@ estilos.textContent = `
         color: #777777;
     }
 
+    body.modo-claro .noticias-encabezado h2 {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .noticias-encabezado .noticias-titulo-principal {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .noticias-encabezado .noticias-subtitulo {
+        color: #555555 !important;
+    }
+
+    body.modo-claro .noticias-encabezado .noticias-etiqueta {
+        color: #C9A66B !important;
+        background: rgba(0, 0, 0, 0.05) !important;
+        border-color: #C9A66B !important;
+    }
+
+    body.modo-claro .sobre-encabezado h1 {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .sobre-encabezado .sobre-titulo {
+        color: #2d2a27 !important;
+    }
+
+    body.modo-claro .sobre-encabezado .sobre-subtitulo {
+        color: #555555 !important;
+    }
+
+    body.modo-claro .sobre-encabezado .sobre-etiqueta {
+        color: #C9A66B !important;
+        background: rgba(0, 0, 0, 0.05) !important;
+        border-color: #C9A66B !important;
+    }
+
     body.modo-claro .politica-privacidad {
         color: #2d2a27;
     }
@@ -636,8 +703,6 @@ estilos.textContent = `
         color: #777777;
         border-top-color: #ddd;
     }
-
-    /*Modo claro*/
 
     body.modo-claro .desarrollador {
         color: #2d2a27;
@@ -725,63 +790,61 @@ estilos.textContent = `
         color: #2d2a27;
     }
 
-
-    body.modo-claro .noticias-encabezado h2 {
-        color: #2d2a27 !important;
+    body.modo-claro .beneficio-card {
+        background: #ffffff;
+        border-color: #ddd;
     }
 
-    body.modo-claro .noticias-encabezado .noticias-titulo-principal {
-        color: #2d2a27 !important;
+    body.modo-claro .beneficio-card h3 {
+        color: #2d2a27;
     }
 
-    body.modo-claro .noticias-encabezado .noticias-subtitulo {
-        color: #555555 !important;
+    body.modo-claro .beneficio-card p {
+        color: #555555;
     }
 
-    body.modo-claro .noticias-encabezado .noticias-etiqueta {
-        color: #C9A66B !important;
-        background: rgba(0, 0, 0, 0.05) !important;
-        border-color: #C9A66B !important;
+    body.modo-claro .beneficio-card:hover {
+        border-color: #C9A66B;
+        box-shadow: 0 10px 40px rgba(201, 166, 107, 0.2);
     }
 
-    body.modo-claro .sobre-encabezado h1 {
-        color: #2d2a27 !important;
+    body.modo-claro .reseña-item {
+        background: #ffffff;
+        border-color: #ddd;
     }
 
-    body.modo-claro .sobre-encabezado .sobre-titulo {
-        color: #2d2a27 !important;
+    body.modo-claro .reseña-item:hover {
+        border-color: #C9A66B;
+        box-shadow: 0 8px 30px rgba(201, 166, 107, 0.2);
     }
 
-    body.modo-claro .sobre-encabezado .sobre-subtitulo {
-        color: #555555 !important;
+    body.modo-claro .reseña-texto {
+        color: #555555;
     }
 
-    body.modo-claro .sobre-encabezado .sobre-etiqueta {
-        color: #C9A66B !important;
-        background: rgba(0, 0, 0, 0.05) !important;
-        border-color: #C9A66B !important;
+    body.modo-claro .reseña-nombre {
+        color: #2d2a27;
     }
 
-
-    body.modo-claro .nav-links {
-        background: #f5f0eb !important;
+    body.modo-claro .reseña-fecha {
+        color: #888888;
     }
 
-    body.modo-claro .nav-links a {
-        color: #2d2a27 !important;
+    body.modo-claro .reseña-avatar {
+        background: #C9A66B;
+        color: #000000;
     }
 
-    body.modo-claro .nav-links a:hover {
-        background-color: #e8e0d8 !important;
-        color: #2d2a27 !important;
+    body.modo-claro .reseña-cliente {
+        border-top-color: #ddd;
     }
 
-    body.modo-claro .nav-links.abierto {
-        background: #f5f0eb !important;
+    body.modo-claro .reseñas-titulo {
+        color: #C9A66B;
     }
 
-    body.modo-claro .overlay-menu {
-        background: rgba(0, 0, 0, 0.5) !important;
+    body.modo-claro .reseñas-titulo::after {
+        background: #C9A66B;
     }
 
     @media (max-width: 768px) {

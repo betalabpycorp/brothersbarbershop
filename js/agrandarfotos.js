@@ -1,18 +1,11 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
 
     const modalGaleria = document.getElementById('modalGaleria');
-    const modalGaleriaCerrar = document.getElementById('modalGaleriaCerrar');
     const modalGaleriaImg = document.getElementById('modalGaleriaImg');
 
-    // Verificar que los elementos existan
+    // Verificar que los elementos esenciales existan
     if (!modalGaleria) {
         console.error('Error: No se encontró #modalGaleria');
-        return;
-    }
-    if (!modalGaleriaCerrar) {
-        console.error('Error: No se encontró #modalGaleriaCerrar');
         return;
     }
     if (!modalGaleriaImg) {
@@ -31,10 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'auto';
     }
 
-    modalGaleriaCerrar.addEventListener('click', cerrarModalGaleria);
-
+    // Cierra al hacer click en cualquier parte que NO sea la imagen
     modalGaleria.addEventListener('click', function(e) {
-        if (e.target === modalGaleria) {
+        if (e.target !== modalGaleriaImg) {
             cerrarModalGaleria();
         }
     });
@@ -45,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Esperar un poco para que las imágenes estén cargadas
     setTimeout(function() {
         const imagenes = document.querySelectorAll('.fotos-galeria');
 
