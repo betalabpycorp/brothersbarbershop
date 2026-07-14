@@ -38,14 +38,6 @@ const reseñas = [
     texto: "Excelente trabajo, el barbero entendió exactamente lo que quería. Además, la charla fue muy amena. ¡Recomendado!",
     estrellas: 5,
     fecha: "08/07/2026"
-},
-{
-    id: 6,
-    nombre: "Angel Torres",
-    avatar: "AT",
-    texto: "Muy profesionales y amables. Me hicieron sentir cómodo desde que llegué y el resultado fue impecable.",
-    estrellas: 5,
-    fecha: "07/07/2026"
 }
 ];
 
