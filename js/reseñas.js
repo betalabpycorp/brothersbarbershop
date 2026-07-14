@@ -22,7 +22,30 @@ const reseñas = [
         texto: "Muy buena experiencia. El barbero supo exactamente lo que quería y el resultado fue espectacular.",
         estrellas: 5,
         fecha: "10/07/2026"
-    }
+    },
+    {
+    id: 4,
+    nombre: "Lucía Fernández",
+    avatar: "LF",
+    texto: "Me encantó el servicio, muy detallistas y atentos. El ambiente es relajado y moderno, perfecto para disfrutar el corte.",
+    estrellas: 5,
+    fecha: "09/07/2026"
+},
+{
+    id: 5,
+    nombre: "Roberto Martínez",
+    avatar: "RM",
+    texto: "Excelente trabajo, el barbero entendió exactamente lo que quería. Además, la charla fue muy amena. ¡Recomendado!",
+    estrellas: 5,
+    fecha: "08/07/2026"
+},
+{
+    id: 6,
+    nombre: "Ana Torres",
+    avatar: "AT",
+    texto: "Muy profesionales y amables. Me hicieron sentir cómoda desde que llegué y el resultado fue impecable.",
+    estrellas: 5,
+    fecha: "07/07/2026"
 ];
 
 function mostrarReseñas() {
