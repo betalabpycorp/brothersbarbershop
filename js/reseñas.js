@@ -9,7 +9,7 @@ const reseñas = [
     },
     {
         id: 2,
-        nombre: "María Gómez",
+        nombre: "Marcos Gómez",
         avatar: "MG",
         texto: "El mejor lugar para cortarse el cabello en Itauguá. La atención es de primera y el ambiente es muy acogedor.",
         estrellas: 5,
@@ -25,7 +25,7 @@ const reseñas = [
     },
     {
     id: 4,
-    nombre: "Lucía Fernández",
+    nombre: "Luis Fernández",
     avatar: "LF",
     texto: "Me encantó el servicio, muy detallistas y atentos. El ambiente es relajado y moderno, perfecto para disfrutar el corte.",
     estrellas: 5,
@@ -41,9 +41,9 @@ const reseñas = [
 },
 {
     id: 6,
-    nombre: "Ana Torres",
+    nombre: "Angel Torres",
     avatar: "AT",
-    texto: "Muy profesionales y amables. Me hicieron sentir cómoda desde que llegué y el resultado fue impecable.",
+    texto: "Muy profesionales y amables. Me hicieron sentir cómodo desde que llegué y el resultado fue impecable.",
     estrellas: 5,
     fecha: "07/07/2026"
 }
