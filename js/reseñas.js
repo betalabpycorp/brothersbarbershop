@@ -46,6 +46,7 @@ const reseñas = [
     texto: "Muy profesionales y amables. Me hicieron sentir cómoda desde que llegué y el resultado fue impecable.",
     estrellas: 5,
     fecha: "07/07/2026"
+}
 ];
 
 function mostrarReseñas() {
